@@ -1,0 +1,10 @@
+// .header {
+//   border-bottom: 1px solid var(--border-bottom);
+// }
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+}
