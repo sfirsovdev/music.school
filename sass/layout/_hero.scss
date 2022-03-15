@@ -8,7 +8,8 @@
 
   .hero__element {
     display: flex;
-    margin-top: 129px;
+    padding-top: 129px;
+    padding-bottom: 129px;
     padding-left: 212px;
   }
 
@@ -74,4 +75,9 @@
       background-color: var(--background-text-color);
     }
   }
+}
+
+.hero__buttonicon {
+  width: 25%;
+  height: 40%;
 }
