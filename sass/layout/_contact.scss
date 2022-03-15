@@ -1,17 +1,33 @@
 .contact {
   display: none;
-  margin-top: 32px;
+  margin-top: 0;
   margin-left: 305px;
   @media screen and (min-width: 768px) {
-    margin-top: 11px;
+    margin-top: 0;
     margin-left: auto;
     display: flex;
     flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 32px;
+    margin-top: 0;
     flex-direction: row;
   }
+}
+
+.сontact__instagram {
+  margin-top: 27px;
+  margin-left: auto;
+}
+
+.contact__linkphone {
+  text-decoration: none;
+  margin-top: 32px;
+  margin-left: 57px;
+  color: var(--accent-text-color);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .contact__item {
