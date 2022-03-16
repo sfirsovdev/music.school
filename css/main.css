@@ -752,3 +752,20 @@ textarea::placeholder {
   width: 25%;
   height: 40%;
 }
+
+.aboutcourse {
+  padding-left: 0;
+  background-color: #f1f1f1;
+  background-image: url(/images/1x2x/Hero/header1x.jpg);
+}
+
+.aboutcourse__line {
+  text-align: center;
+  padding-top: 80.75px;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  line-height: 1.2;
+  color: var(--second-text-color);
+}
