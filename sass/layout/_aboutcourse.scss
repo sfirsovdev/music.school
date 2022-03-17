@@ -1,10 +1,14 @@
 .aboutcourse {
-  padding-left: 0;
+  padding-left: 80px;
+  padding-right: 80px;
   background-color: #f1f1f1;
   background-image: url(/images/1x2x/Hero/header1x.jpg);
 }
 
 .aboutcourse__line {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
   text-align: center;
   padding-top: 80.75px;
   font-family: "Cormorant Unicase";
@@ -14,3 +18,47 @@
   line-height: 1.2;
   color: var(--second-text-color);
 }
+
+.aboutcourse__line::before {
+  left: -1em;
+  margin: 0 0 0 -50%;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.aboutcourse__line::after {
+  left: 1.3em;
+  margin: 0 -50% 0 0;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+// .aboutcourse__line::before,
+// aboutcourse__line::after {
+//   border-left: solid 2px red;
+//   content: ""; /* Левая кавычка */
+//   font-size: 40px; /* Размер текста кавычек */
+//   color: #c1172c; /* Цвет кавычек */
+//   line-height: 0; /* Текст не занимает место */
+// }
+// .aboutcourse__line::after {
+//   border-left: solid 2px red;
+//   content: ""; /* Правая кавычка */
+//   font-size: 40px; /* Размер текста кавычек */
+//   color: #c1172c; /* Цвет кавычек */
+//   line-height: 0; /* Текст не занимает место */
+// }
