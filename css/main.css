@@ -801,3 +801,40 @@ textarea::placeholder {
   background-clip: content-box;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+.aboutcourse__cards {
+  margin-top: 10px;
+  padding-bottom: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutcourse__item {
+  width: 212px;
+  margin-right: 40px;
+  padding-top: 60px;
+}
+
+.aboutcourse__h3 {
+  font-family: "Cormorant Unicase";
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+}
+
+.aboutcourse__text {
+  margin-top: 5px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--second-text-color);
+}
