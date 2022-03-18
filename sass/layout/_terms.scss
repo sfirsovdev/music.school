@@ -1,17 +1,24 @@
 .terms {
   display: flex;
-  padding-top: 135.5px;
+  padding-bottom: 200px;
   padding-left: 80px;
-  padding-right: 80px;
 }
 
 .terms__left {
   display: inline-block;
-  margin-right: 252px;
+  margin-right: 128px;
+  padding-top: 135px;
 }
 
 .terms__right {
   display: flex;
+  margin-top: 84px;
+  padding-top: 73px;
+  padding-bottom: 71px;
+  padding-left: 90px;
+  padding-right: 8.9%;
+  border: 2px solid #fe8202;
+  border-right: none;
 }
 
 .terms__title {
@@ -98,6 +105,22 @@
 .terms__div {
   display: flex;
   margin-top: 54px;
+}
+
+.terms__nameline::after {
+  margin-top: 32px;
+  content: " ";
+  border-bottom: solid 2px rgba(224, 152, 78, 0.7);
+  width: 297px;
+  display: block;
+}
+
+.terms__phoneline::after {
+  margin-top: 32px;
+  content: " ";
+  border-bottom: solid 2px rgba(224, 152, 78, 0.7);
+  width: 297px;
+  display: block;
 }
 
 .input-name {
