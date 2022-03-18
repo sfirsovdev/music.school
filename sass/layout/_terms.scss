@@ -1,12 +1,12 @@
 .terms {
   display: flex;
+  justify-content: space-between;
   padding-bottom: 200px;
-  padding-left: 80px;
+  padding-right: 0;
 }
 
 .terms__left {
   display: inline-block;
-  margin-right: 128px;
   padding-top: 135px;
 }
 
@@ -16,9 +16,13 @@
   padding-top: 73px;
   padding-bottom: 71px;
   padding-left: 90px;
-  padding-right: 8.9%;
+  padding-right: 2%;
   border: 2px solid #fe8202;
   border-right: none;
+}
+
+.terms__form {
+  padding-right: 135px;
 }
 
 .terms__title {

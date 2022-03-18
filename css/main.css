@@ -120,7 +120,7 @@ picture img {
   padding-left: 80px;
   padding-right: 80px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 @media screen and (min-width: 480px) {
@@ -135,9 +135,9 @@ picture img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .container {
-    width: 1200px;
+    width: 1400px;
   }
 }
 
@@ -761,13 +761,15 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 200px;
-  padding-left: 80px;
+  padding-right: 0;
 }
 
 .terms__left {
   display: inline-block;
-  margin-right: 128px;
   padding-top: 135px;
 }
 
@@ -779,9 +781,13 @@ textarea::placeholder {
   padding-top: 73px;
   padding-bottom: 71px;
   padding-left: 90px;
-  padding-right: 8.9%;
+  padding-right: 2%;
   border: 2px solid #fe8202;
   border-right: none;
+}
+
+.terms__form {
+  padding-right: 135px;
 }
 
 .terms__title {
