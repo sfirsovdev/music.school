@@ -1,0 +1,151 @@
+.terms {
+  display: flex;
+  padding-top: 135.5px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.terms__left {
+  display: inline-block;
+  margin-right: 252px;
+}
+
+.terms__right {
+  display: flex;
+}
+
+.terms__title {
+  font-family: "Cormorant Unicase";
+  font-size: 36px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.terms__list {
+  margin-top: 50px;
+}
+
+.terms__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 45px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.terms__item::before {
+  position: absolute;
+  margin-left: -45px;
+  margin-top: 12px;
+  content: " ";
+  border-top: solid 2px #fff;
+  width: 28px;
+  display: block;
+}
+
+.terms__prices {
+  display: flex;
+  margin-top: 50px;
+}
+
+.terms__pricename {
+  font-family: "Cormorant Unicase";
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+}
+
+.terms__price {
+  margin-left: 99px;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+}
+
+.terms__formtitle {
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.terms__formtitlespan {
+  color: var(--accent-text-color);
+}
+
+.terms__formtitlespan::after {
+  margin-top: 7px;
+  content: " ";
+  border-bottom: solid 2px #fe8202;
+  width: 220px;
+  display: block;
+}
+
+.terms__div {
+  display: flex;
+  margin-top: 54px;
+}
+
+.input-name {
+  margin-right: 61px;
+  border: none;
+  width: 297px;
+  background-color: black;
+}
+
+.input-phone {
+  border: none;
+  width: 297px;
+  background-color: black;
+}
+
+input::placeholder {
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.terms__button {
+  position: relative;
+  border: none;
+  margin-top: 76px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+}
+
+.terms__buttonicon {
+  position: absolute;
+  margin-left: 112px;
+  margin-top: -25px;
+  width: 25%;
+  height: 40%;
+  fill: var(--accent-text-color);
+}

@@ -1,14 +1,10 @@
 @charset "UTF-8";
 :root {
-  --main-text-color: #757575;
+  --main-text-color: #fbfbfb;
   --second-text-color: #212121;
   --accent-text-color: #fe8202;
-  --background-color: #2f303a;
+  --background-color: #f1f1f1;
   --text-color: #ffffff;
-  --background-text-color: #0f5996;
-  --section-color: #f5f4fa;
-  --border-bottom: #ececec;
-  --border-portfolio-cards: #eeeeee;
 }
 
 body {
@@ -474,6 +470,10 @@ textarea::placeholder {
   display: none;
   margin-top: 0;
   margin-left: 305px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media screen and (min-width: 768px) {
@@ -514,88 +514,6 @@ textarea::placeholder {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
-}
-
-.contact__item {
-  margin-top: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .contact__item {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contact__item {
-    margin-top: 0;
-  }
-}
-
-.contact__item + .contact__item {
-  margin-left: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .contact__item + .contact__item {
-    margin-left: 30px;
-  }
-}
-
-.contact__mail {
-  margin-right: 8px;
-  width: 14px;
-  height: 10px;
-}
-
-@media screen and (min-width: 1200px) {
-  .contact__mail {
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
-  }
-}
-
-.contact__phone {
-  margin-right: 8px;
-  width: 10px;
-  height: 14px;
-}
-
-@media screen and (min-width: 768px) {
-  .contact__phone {
-    margin-right: 10px;
-    width: 10px;
-    height: 16px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contact__phone {
-    margin-right: 10px;
-    width: 10px;
-    height: 16px;
-  }
-}
-
-.contact__link {
-  margin-right: 0;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  color: var(--accent-text-color);
-  fill: var(--accent-text-color);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  -webkit-transition: color 250ms linear;
-  transition: color 250ms linear;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact__link:hover, .contact__link:focus {
-  fill: var(--accent-text-color);
-  color: var(--accent-text-color);
 }
 
 .header__nav {
@@ -756,7 +674,7 @@ textarea::placeholder {
 .aboutcourse {
   padding-left: 80px;
   padding-right: 80px;
-  background-color: #f1f1f1;
+  background-color: var(--background-color);
   background-image: url(/images/1x2x/Hero/header1x.jpg);
 }
 
@@ -821,7 +739,7 @@ textarea::placeholder {
   padding-top: 60px;
 }
 
-.aboutcourse__h3 {
+.aboutcourse__title {
   font-family: "Cormorant Unicase";
   font-weight: 600;
   font-size: 48px;
@@ -837,4 +755,192 @@ textarea::placeholder {
   font-size: 14px;
   line-height: 1.5;
   color: var(--second-text-color);
+}
+
+.terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 135.5px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.terms__left {
+  display: inline-block;
+  margin-right: 252px;
+}
+
+.terms__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.terms__title {
+  font-family: "Cormorant Unicase";
+  font-size: 36px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.terms__list {
+  margin-top: 50px;
+}
+
+.terms__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 45px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.terms__item:last-child {
+  margin-bottom: 0;
+}
+
+.terms__item::before {
+  position: absolute;
+  margin-left: -45px;
+  margin-top: 12px;
+  content: " ";
+  border-top: solid 2px #fff;
+  width: 28px;
+  display: block;
+}
+
+.terms__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.terms__pricename {
+  font-family: "Cormorant Unicase";
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+}
+
+.terms__price {
+  margin-left: 99px;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+}
+
+.terms__formtitle {
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.terms__formtitlespan {
+  color: var(--accent-text-color);
+}
+
+.terms__formtitlespan::after {
+  margin-top: 7px;
+  content: " ";
+  border-bottom: solid 2px #fe8202;
+  width: 220px;
+  display: block;
+}
+
+.terms__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 54px;
+}
+
+.input-name {
+  margin-right: 61px;
+  border: none;
+  width: 297px;
+  background-color: black;
+}
+
+.input-phone {
+  border: none;
+  width: 297px;
+  background-color: black;
+}
+
+input::-webkit-input-placeholder {
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+input:-ms-input-placeholder {
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+input::-ms-input-placeholder {
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+input::placeholder {
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.terms__button {
+  position: relative;
+  border: none;
+  margin-top: 76px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+}
+
+.terms__buttonicon {
+  position: absolute;
+  margin-left: 112px;
+  margin-top: -25px;
+  width: 25%;
+  height: 40%;
+  fill: var(--accent-text-color);
 }
