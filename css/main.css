@@ -1050,3 +1050,9 @@ input::placeholder {
   line-height: 1.2;
   color: var(--accent-text-color);
 }
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
