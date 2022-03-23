@@ -467,37 +467,11 @@ textarea::placeholder {
 }
 
 .contact {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 0;
-  margin-left: 305px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-@media screen and (min-width: 768px) {
-  .contact {
-    margin-top: 0;
-    margin-left: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contact {
-    margin-top: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+  margin-left: auto;
 }
 
 .сontact__instagram {
@@ -516,6 +490,12 @@ textarea::placeholder {
   line-height: 1.5;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,7 +510,10 @@ textarea::placeholder {
 }
 
 .sitenav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
   margin-left: 245px;
   font-family: "Poppins";
   font-weight: 400;
@@ -540,47 +523,38 @@ textarea::placeholder {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-  .sitenav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .sitenav .sitenav__item {
-    margin-top: 32px;
-  }
-  .sitenav .sitenav__link {
-    color: var(--second-text-color);
-    text-decoration: none;
-    -webkit-transition: color 250ms linear;
-    transition: color 250ms linear;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .sitenav .sitenav__item + .sitenav__item {
-    margin-left: 50px;
-  }
+.sitenav__link {
+  color: var(--second-text-color);
+  text-decoration: none;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sitenav .sitenav__linkcurrent {
+.sitenav__item + .sitenav__item {
+  margin-left: 50px;
+}
+
+.sitenav__linkcurrent {
   color: var(--accent-text-color);
   display: block;
   text-decoration: none;
   position: relative;
 }
 
-.sitenav .sitenav .sitenav .sitenav__linkcurrent {
+.sitenav .sitenav .sitenav__linkcurrent {
   color: var(--accent-text-color);
 }
 
-.sitenav .sitenav__link {
+.sitenav__link {
   display: block;
   text-decoration: none;
   color: #ffffff;
 }
 
-.sitenav .sitenav .sitenav__link:hover,
-.sitenav .sitenav .sitenav__link:focus {
+.sitenav .sitenav__link:hover,
+.sitenav .sitenav__link:focus {
   color: var(--accent-text-color);
 }
 
@@ -676,6 +650,7 @@ textarea::placeholder {
   padding-right: 80px;
   background-color: var(--background-color);
   background-image: url(/images/1x2x/Hero/header1x.jpg);
+  background-size: 100%;
 }
 
 .aboutcourse__line {
@@ -765,7 +740,6 @@ textarea::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 164px;
-  padding-right: 0;
 }
 
 .terms__left {
@@ -774,20 +748,16 @@ textarea::placeholder {
 }
 
 .terms__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 84px;
   padding-top: 73px;
   padding-bottom: 71px;
   padding-left: 90px;
-  padding-right: 2%;
   border: 2px solid #fe8202;
   border-right: none;
 }
 
 .terms__form {
-  padding-right: 135px;
+  padding-right: 50px;
 }
 
 .terms__title {
@@ -1018,8 +988,9 @@ input::placeholder {
 .howitwork__text {
   text-align: center;
   margin-top: 70px;
-  padding-left: 414px;
-  padding-right: 413px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 613px;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;

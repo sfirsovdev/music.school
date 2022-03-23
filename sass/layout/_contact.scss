@@ -1,18 +1,7 @@
 .contact {
-  display: none;
+  display: flex;
   margin-top: 0;
-  margin-left: 305px;
-  flex-direction: row;
-  @media screen and (min-width: 768px) {
-    margin-top: 0;
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-top: 0;
-    flex-direction: row;
-  }
+  margin-left: auto;
 }
 
 .сontact__instagram {
