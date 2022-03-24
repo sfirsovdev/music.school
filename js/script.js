@@ -6,3 +6,13 @@ $(document).ready(function(){
     }
     );  
 });
+
+$(document).ready(function(){
+    $('.slider2').slick({
+        arrows: true,
+        dots: false,
+        adaptiveHeight: true,
+        slidesToShow: 3,
+    }
+    );  
+});

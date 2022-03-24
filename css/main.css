@@ -678,7 +678,7 @@ textarea::placeholder {
   vertical-align: middle;
   background: #000;
   background-clip: content-box;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #181818;
 }
 
 .aboutcourse__line::after {
@@ -692,7 +692,7 @@ textarea::placeholder {
   vertical-align: middle;
   background: #000;
   background-clip: content-box;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid #181818;
 }
 
 .aboutcourse__cards {
@@ -844,7 +844,7 @@ textarea::placeholder {
   display: block;
 }
 
-.terms__div {
+.terms__property {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1044,7 +1044,7 @@ input::placeholder {
   margin-right: auto;
   width: 1450px;
   margin-top: 64px;
-  margin-bottom: 130px;
+  margin-bottom: 172px;
   position: relative;
   padding: 0px 289px;
 }
@@ -1098,4 +1098,274 @@ input::placeholder {
 .slick-list.draggable {
   border: solid 3px #fbfbfb;
   border-radius: 5px;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1450px;
+  margin-top: 64px;
+  margin-bottom: 172px;
+  position: relative;
+  padding: 0px 289px;
+}
+
+.slider2 .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 43px;
+  height: 43px;
+  border: none;
+}
+
+.slider2 .slick-arrow.slick-prev {
+  display: none;
+}
+
+.slider2 .slick-arrow.slick-next {
+  margin: -35px 0px 0px 0px;
+  right: 185px;
+  background: url("/images/svg/arrow-right.svg") 0 0/100% no-repeat;
+}
+
+.slider2 .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider2 .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+  margin-top: 40px;
+  margin-left: 0;
+}
+
+.slider2 .slick-dots button {
+  font-size: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.slider2 .slick-dots li.slick-active button {
+  width: 70px;
+}
+
+.structure {
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: var(--background-color);
+  background-image: url(/images/1x2x/Hero/header1x.jpg);
+  background-size: 100%;
+}
+
+.structure__line {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 80.75px;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  line-height: 1.2;
+  color: var(--second-text-color);
+}
+
+.structure__line::before {
+  left: -1em;
+  margin: 0 0 0 -50%;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid #181818;
+}
+
+.structure__line::after {
+  left: 1.3em;
+  margin: 0 -50% 0 0;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid #181818;
+}
+
+.accordiondiv {
+  margin-top: 70px;
+  padding-bottom: 104px;
+  text-align: center;
+}
+
+.accordion {
+  margin-bottom: 20px;
+  background-color: var(--accent-text-color);
+  color: var(--main-text-color);
+  cursor: pointer;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 30px;
+  width: 684px;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  -webkit-transition: 4s;
+  transition: 4s;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+}
+
+.accordion__panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.acordion__text {
+  text-align: left;
+  margin-top: 6px;
+  margin-bottom: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 684px;
+  color: var(--second-text-color);
+}
+
+.accordion__down {
+  margin-left: 504px;
+  fill: var(--main-text-color);
+}
+
+.accordion.active .accordion__down {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.about {
+  background-size: 100%;
+}
+
+.about__line {
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.about__line::before {
+  left: -1em;
+  margin: 0 0 0 -50%;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid #fbfbfb;
+}
+
+.about__line::after {
+  left: 1.3em;
+  margin: 0 -50% 0 0;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid #fbfbfb;
+}
+
+.about__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+}
+
+.about__text {
+  margin-left: 79px;
+  width: 477px;
+}
+
+.about__text1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.about__text2 {
+  margin-top: 27px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.certificate {
+  margin-top: 120px;
+}
+
+.certificate__title {
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--main-text-color);
 }

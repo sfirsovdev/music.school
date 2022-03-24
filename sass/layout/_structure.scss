@@ -1,0 +1,49 @@
+.structure {
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: var(--background-color);
+  background-image: url(/images/1x2x/Hero/header1x.jpg);
+  background-size: 100%;
+}
+
+.structure__line {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 80.75px;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  line-height: 1.2;
+  color: var(--second-text-color);
+}
+
+.structure__line::before {
+  left: -1em;
+  margin: 0 0 0 -50%;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid #181818;
+}
+
+.structure__line::after {
+  left: 1.3em;
+  margin: 0 -50% 0 0;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid #181818;
+}
