@@ -70,25 +70,18 @@
 
 // тут заканчиваеться первый слайдер ------------!
 
-.slick-track {
+.sliderbox {
   display: flex;
-  align-items: flex-start;
-  text-align: center;
-  justify-content: center;
+  margin-top: 70px;
+  margin-left: auto;
 }
 
-.slick-list {
-  overflow: hidden;
+.slider2 .slick-track {
+  display: block;
 }
 
 .slider2 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1450px;
-  margin-top: 64px;
-  margin-bottom: 172px;
   position: relative;
-  padding: 0px 289px;
 }
 
 .slider2 .slick-arrow {
@@ -103,12 +96,17 @@
 }
 
 .slider2 .slick-arrow.slick-prev {
-  display: none;
+  display: none !important;
+  margin: -35px 0px 0px 0px;
+  left: 185px;
+  top: 50%;
+  background: url("/images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
 }
 
 .slider2 .slick-arrow.slick-next {
   margin: -35px 0px 0px 0px;
-  right: 185px;
+  left: 1170px;
+  top: 50%;
   background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
 }
 
@@ -132,4 +130,79 @@
 
 .slider2 .slick-dots li.slick-active button {
   width: 70px;
+}
+
+.slider2 .slick-list.draggable {
+  border: none;
+}
+
+.slider2__item {
+  margin-bottom: 24px;
+}
+
+// тут заканчиваеться второй слайдер ------------!
+// тут начинаеться большой слайдер ------------!
+
+.sliderbig .slick-track {
+  text-align: left;
+}
+
+.sliderbig {
+  width: 874px;
+  margin-left: 46px;
+  margin-right: auto;
+  position: relative;
+  padding-left: 0;
+}
+
+.sliderbig__item {
+  width: 874px;
+}
+
+.sliderbig .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 43px;
+  height: 43px;
+  border: none;
+}
+
+.sliderbig .slick-arrow.slick-prev {
+  left: 185px;
+  background: url("/images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
+}
+
+.sliderbig .slick-arrow.slick-next {
+  margin: -35px 0px 0px 0px;
+  left: 950px;
+  background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
+}
+
+.sliderbig .slick-dots {
+  display: flex;
+}
+
+.sliderbig .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+  margin-top: 40px;
+  margin-left: 0;
+}
+
+.sliderbig .slick-dots button {
+  font-size: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.sliderbig .slick-dots li.slick-active button {
+  width: 70px;
+}
+
+.sliderbig .slick-list.draggable {
+  border: none;
 }

@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.slider').slick({
         arrows: true,
         dots: true,
-        adaptiveHeight:true,
+        adaptiveHeight: true,
     }
     );  
 });
@@ -10,9 +10,24 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.slider2').slick({
         arrows: true,
-        dots: false,
+        dots:false,
         adaptiveHeight: true,
-        slidesToShow: 3,
+        vertical: true,
+        rows: 3,
+        asNavFor:".sliderbig"
     }
     );  
 });
+
+$(document).ready(function(){
+    $('.sliderbig').slick({
+        arrows: false,
+        dots: false,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        fade: true,
+        asNavFor:".slider2"
+    }
+    );
+    });
+
