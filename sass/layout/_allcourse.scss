@@ -1,0 +1,135 @@
+.trysong {
+  background-color: --second-text-color;
+}
+
+.trysong__line {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 67px;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--main-text-color);
+}
+
+.trysong__line::before {
+  left: -1em;
+  margin: 0 0 0 -50%;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: var(--main-text-color);
+  background-clip: content-box;
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.trysong__line::after {
+  left: 1.3em;
+  margin: 0 -50% 0 0;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: var(--main-text-color);
+  background-clip: content-box;
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.trysong__text {
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.035em;
+  color: var(--main-text-color);
+}
+
+.trysong__text {
+  margin-top: 25px;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent-text-color);
+}
+
+.trysong__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 280px;
+  padding-right: 280px;
+  padding-bottom: 47px;
+}
+
+.trysong__item {
+  margin-bottom: 73px;
+}
+
+.trysong__name {
+  margin-top: 18px;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.trysong__name2 {
+  margin-left: 156px;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--accent-text-color);
+}
+
+.trysong__level {
+  margin-top: 10px;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.trysong__svg {
+  margin-left: 94px;
+}
+
+.trysong__description {
+  margin-top: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.trysong__button {
+  margin-top: 18px;
+  padding: 0;
+  background-color: black;
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
+.trysong__buttonicon {
+  margin-top: -2px;
+  margin-left: 11px;
+}

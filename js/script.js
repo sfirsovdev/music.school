@@ -13,8 +13,9 @@ $(document).ready(function(){
         dots:false,
         adaptiveHeight: true,
         vertical: true,
-        rows: 3,
-        asNavFor:".sliderbig"
+        slidesToShow: 3,
+        asNavFor: ".sliderbig",
+        focusOnSelect: true
     }
     );  
 });

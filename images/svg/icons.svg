@@ -20,5 +20,12 @@
 <symbol id="icon-right-arrow-down" viewBox="0 0 36 32">
 <path d="M32.891 17.208l-1.474-0.131-1.772 10.352-25.591-25.591-2.376 1.446 25.591 25.591-13.305-1.179-0.388 2.295 18.347 1.626 2.443-14.279-1.474-0.131z"></path>
 </symbol>
+<symbol id="icon-Group-52" viewBox="0 0 194 32">
+<path fill="#fe8202" style="fill: var(--color1, #fe8202)" d="M16 0l3.592 11.056h11.625l-9.404 6.833 3.592 11.056-9.405-6.833-9.405 6.833 3.592-11.056-9.405-6.833h11.625l3.592-11.056z"></path>
+<path fill="none" stroke="#fe8202" style="stroke: var(--color1, #fe8202)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6842" d="M137.263 2.725l2.98 9.173h9.645l-7.803 5.669 0.189 0.582 2.791 8.591-7.803-5.669-7.803 5.669 2.98-9.173-7.803-5.669h9.645l0.189-0.582 2.791-8.591z"></path>
+<path fill="#fe8202" style="fill: var(--color1, #fe8202)" d="M56.421 0l3.592 11.056h11.625l-9.404 6.833 3.592 11.056-9.405-6.833-9.405 6.833 3.592-11.056-9.404-6.833h11.625l3.592-11.056z"></path>
+<path fill="none" stroke="#fe8202" style="stroke: var(--color1, #fe8202)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6842" d="M177.684 2.725l2.791 8.591 0.19 0.582h9.644l-7.803 5.669 0.19 0.582 2.791 8.591-7.803-5.669-7.803 5.669 2.791-8.591 0.19-0.582-7.803-5.669h9.644l0.19-0.582 2.791-8.591z"></path>
+<path fill="#fe8202" style="fill: var(--color1, #fe8202)" d="M96.842 0l3.592 11.056h11.625l-9.404 6.833 3.592 11.056-9.405-6.833-9.405 6.833 3.592-11.056-9.404-6.833h11.625l3.592-11.056z"></path>
+</symbol>
 </defs>
 </svg>

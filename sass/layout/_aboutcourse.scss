@@ -17,7 +17,7 @@
   font-size: 36px;
   line-height: 44px;
   line-height: 1.2;
-  color: var(--second-text-color);
+  color: var(--border-color);
 }
 
 .aboutcourse__line::before {
@@ -31,7 +31,7 @@
   vertical-align: middle;
   background: #000;
   background-clip: content-box;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .aboutcourse__line::after {
@@ -45,7 +45,7 @@
   vertical-align: middle;
   background: #000;
   background-clip: content-box;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .aboutcourse__cards {
@@ -77,21 +77,5 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: var(--second-text-color);
+  color: var(--border-color);
 }
-
-// .aboutcourse__line::before,
-// aboutcourse__line::after {
-//   border-left: solid 2px red;
-//   content: ""; /* Левая кавычка */
-//   font-size: 40px; /* Размер текста кавычек */
-//   color: #c1172c; /* Цвет кавычек */
-//   line-height: 0; /* Текст не занимает место */
-// }
-// .aboutcourse__line::after {
-//   border-left: solid 2px red;
-//   content: ""; /* Правая кавычка */
-//   font-size: 40px; /* Размер текста кавычек */
-//   color: #c1172c; /* Цвет кавычек */
-//   line-height: 0; /* Текст не занимает место */
-// }

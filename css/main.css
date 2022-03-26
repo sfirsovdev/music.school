@@ -5,6 +5,7 @@
   --accent-text-color: #fe8202;
   --background-color: #f1f1f1;
   --text-color: #ffffff;
+  --border-color: #181818;
 }
 
 body {
@@ -80,11 +81,7 @@ picture img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 108px;
-  padding: 0;
-  width: 200px;
-  height: 50px;
   background-color: var(--accent-text-color);
-  border-radius: 4px;
   cursor: pointer;
   fill: var(--text-color);
   font-family: Roboto;
@@ -641,8 +638,8 @@ textarea::placeholder {
 }
 
 .hero__buttonicon {
-  width: 25%;
-  height: 40%;
+  margin-left: 11px;
+  margin-top: -2px;
 }
 
 .aboutcourse {
@@ -664,7 +661,7 @@ textarea::placeholder {
   font-size: 36px;
   line-height: 44px;
   line-height: 1.2;
-  color: var(--second-text-color);
+  color: var(--border-color);
 }
 
 .aboutcourse__line::before {
@@ -678,7 +675,7 @@ textarea::placeholder {
   vertical-align: middle;
   background: #000;
   background-clip: content-box;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .aboutcourse__line::after {
@@ -692,7 +689,7 @@ textarea::placeholder {
   vertical-align: middle;
   background: #000;
   background-clip: content-box;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .aboutcourse__cards {
@@ -729,7 +726,7 @@ textarea::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  color: var(--second-text-color);
+  color: var(--border-color);
 }
 
 .terms {
@@ -753,7 +750,6 @@ textarea::placeholder {
   padding-bottom: 71px;
   padding-left: 90px;
   border: 2px solid #fe8202;
-  border-right: none;
 }
 
 .terms__form {
@@ -1240,84 +1236,6 @@ input::placeholder {
   border: none;
 }
 
-.slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slider3 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1450px;
-  margin-top: 64px;
-  margin-bottom: 172px;
-  position: relative;
-  padding: 0px 289px;
-}
-
-.slider3 .slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin: -30px 0px 0px 0px;
-  z-index: 10;
-  font-size: 0;
-  width: 43px;
-  height: 43px;
-  border: none;
-}
-
-.slider3 .slick-arrow.slick-prev {
-  left: 185px;
-  background: url("/images/svg/arrow-left.svg") 0 0/100% no-repeat;
-}
-
-.slider3 .slick-arrow.slick-next {
-  margin: -35px 0px 0px 0px;
-  right: 185px;
-  background: url("/images/svg/arrow-right.svg") 0 0/100% no-repeat;
-}
-
-.slider3 .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.slider3 .slick-dots li {
-  list-style: none;
-  margin: 0px 10px;
-  margin-top: 40px;
-  margin-left: 0;
-}
-
-.slider3 .slick-dots button {
-  font-size: 0;
-  width: 30px;
-  height: 2px;
-  background-color: #fff;
-}
-
-.slider3 .slick-dots li.slick-active button {
-  width: 70px;
-}
-
-.slick-list.draggable {
-  border: solid 3px #fbfbfb;
-  border-radius: 5px;
-}
-
 .structure {
   padding-left: 80px;
   padding-right: 80px;
@@ -1335,7 +1253,6 @@ input::placeholder {
   font-family: "Cormorant Unicase";
   font-weight: 400;
   font-size: 36px;
-  line-height: 44px;
   line-height: 1.2;
   color: var(--second-text-color);
 }
@@ -1441,7 +1358,6 @@ input::placeholder {
   font-family: "Cormorant Unicase";
   font-weight: 400;
   font-size: 36px;
-  line-height: 44px;
   line-height: 1.2;
   color: var(--main-text-color);
 }
@@ -1515,4 +1431,145 @@ input::placeholder {
   line-height: 1.2;
   letter-spacing: 0.035em;
   color: var(--main-text-color);
+}
+
+.trysong {
+  background-color: --second-text-color;
+}
+
+.trysong__line {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 67px;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--main-text-color);
+}
+
+.trysong__line::before {
+  left: -1em;
+  margin: 0 0 0 -50%;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: var(--main-text-color);
+  background-clip: content-box;
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.trysong__line::after {
+  left: 1.3em;
+  margin: 0 -50% 0 0;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: var(--main-text-color);
+  background-clip: content-box;
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.trysong__text {
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.035em;
+  color: var(--main-text-color);
+}
+
+.trysong__text {
+  margin-top: 25px;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent-text-color);
+}
+
+.trysong__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 280px;
+  padding-right: 280px;
+  padding-bottom: 47px;
+}
+
+.trysong__item {
+  margin-bottom: 73px;
+}
+
+.trysong__name {
+  margin-top: 18px;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.trysong__name2 {
+  margin-left: 156px;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--accent-text-color);
+}
+
+.trysong__level {
+  margin-top: 10px;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+.trysong__svg {
+  margin-left: 94px;
+}
+
+.trysong__description {
+  margin-top: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.trysong__button {
+  margin-top: 18px;
+  padding: 0;
+  background-color: black;
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
+.trysong__buttonicon {
+  margin-top: -2px;
+  margin-left: 11px;
 }
