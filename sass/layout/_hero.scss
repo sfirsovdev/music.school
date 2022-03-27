@@ -54,12 +54,17 @@
     letter-spacing: 0.035em;
   }
 
-  .hero__button {
+  .herobutton {
     margin-top: 18px;
-    padding: 0;
     background-color: var(--border-color);
-    color: var(--accent-text-color);
-    fill: var(--accent-text-color);
+    color: var(--main-text-color);
+    fill: var(--main-text-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+      fill: var(--accent-text-color);
+      transition: 0.5s;
+    }
   }
 
   .hero__buttonicon {

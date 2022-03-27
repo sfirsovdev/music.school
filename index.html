@@ -39,16 +39,16 @@
 
                 <ul class="sitenav">
                     <li class="sitenav__item">
-                        <a href="./index.html" class="sitenav__linkcurrent active_">о школе</a>
+                        <a href="#aboutcourse" class="sitenav__linkcurrent active_">о школе</a>
                     </li>
                     <li class="sitenav__item">
-                        <a href="./portfolio.html" class="sitenav__link">курсы</a>
+                        <a href="#allcourse" class="sitenav__link">курсы</a>
                     </li>
                     <li class="sitenav__item">
-                        <a href="" class="sitenav__link">ученики</a>
+                        <a href="#howitwork" class="sitenav__link">ученики</a>
                     </li>
                     <li class="sitenav__item">
-                        <a href="" class="sitenav__link">контакты</a>
+                        <a href="#footer" class="sitenav__link">контакты</a>
                     </li>
                 </ul>
 
@@ -61,9 +61,7 @@
                     <use href="./images/svg/icons.svg#icon-Instagram---Negative" ></use>
                 </svg></a>
 
-                    <a class="contact__linkphone" href="tel:+74232497777">
-                            <use href="./images/svg/icons.svg#icon-smartphone"></use>
-                        </svg>+74232497777</a>
+                    <a class="contact__linkphone" href="tel:+74232497777">+74232497777</a>
                 </div>
         
         </div>
@@ -194,8 +192,8 @@
 </section> <!-- aboutcourse закончился -->
 
 
-
-<section class="howitwork container">
+<section class="howitwork" id="howitwork">
+    <div class="howitwork container">
 <h2 class="howitwork__line"> Как это работает</h2>
 </div>
 </section>
@@ -228,6 +226,7 @@ consequat sunt nostrud amet.</p>
     <iframe width="862" height="481" src="https://www.youtube.com/embed/ZAqbTRaxpq8" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
+</div>
 </div>
 </div>
 </section><!-- howitwork закончился -->
@@ -286,7 +285,7 @@ consequat sunt nostrud amet.</p>
 </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <div class="about container">
         <h2 class="about__line"> О нас</h2>
         <div class="about__box">
@@ -369,7 +368,7 @@ consequat sunt nostrud amet.</p>
 
 </section> <!-- Тут закончился большой слайдер и секция certificate -->
 
-<section class="allcourse">
+<section class="allcourse" id="allcourse">
     <div class="allcourse container">
         <h2 class="allcourse__line">Все наши курсы</h2>
 <p class="allcourse__text">*Действует предзапись</p>    
@@ -517,7 +516,7 @@ consequat sunt nostrud amet.</p>
     </div>
 </section> <!-- Секция join закрыта -->
 
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer__border"></div>
     <div class="footerbox container">
         <address class="footer__adress">Наш адрес:<span class="footer__adress2">Amet minim mollit</span></address>
@@ -527,9 +526,18 @@ consequat sunt nostrud amet.</p>
     </a></span></div>
 
     <div class="footer__icon">
-        <svg class="footer__svg" width="148.33" height="29.44">
-        <use href="./images/svg/icons.svg#icon-Group-165"></use>
-    </svg></div>
+        <svg class="footer__facebook" width="29.44" height="29.44">
+        <use href="./images/svg/icons.svg#icon-Facebook---Negative"><a href="#"></a></use>
+        </svg>
+
+    <svg class="footer__instagram" width="29.44" height="29.44">
+        <use href="./images/svg/icons.svg#icon-Instagram---Negative"><a href="#"></a></use>
+    </svg>
+
+    <svg class="footer__vk" width="29.44" height="29.44">
+        <use href="./images/svg/icons.svg#icon-Vector"><a href="#"></a></use>
+    </svg>
+    </div>
     </div>
     <p class="footer__rights">Все права защищены</p>
 </footer>
@@ -540,5 +548,6 @@ consequat sunt nostrud amet.</p>
 
 
     </main>
+    </body>
 </html>
 

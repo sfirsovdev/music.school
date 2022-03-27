@@ -19,7 +19,7 @@
 }
 
 .trysong__line::before {
-  left: -1em;
+  left: -2em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -33,7 +33,7 @@
 }
 
 .trysong__line::after {
-  left: 1.3em;
+  left: 2.2em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -77,8 +77,8 @@
 }
 
 .trysong__button {
-  background-color: var(--main-text-color);
   background-image: url(/images/1x2x/Hero/header1x.jpg);
+  background-color: var(--main-text-color);
   margin-top: 0;
   margin-left: 136px;
   font-family: "Cormorant Unicase";
@@ -88,6 +88,12 @@
   letter-spacing: 0.03em;
   color: var(--border-color);
   fill: var(--border-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+    transition: 0.5s;
+  }
 }
 
 .trysong__buttonicon {

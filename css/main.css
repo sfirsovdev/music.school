@@ -64,6 +64,11 @@ picture img {
   height: auto;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,17 +103,6 @@ picture img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: background-color 250ms linear;
-  transition: background-color 250ms linear;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buttonform:focus, .buttonform:hover {
-  background: var(--background-text-color);
-  color: var(--text-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .container {
@@ -551,8 +545,46 @@ textarea::placeholder {
   color: var(--main-text-color);
 }
 
-.footer__svg {
-  margin-left: 333px;
+.footer__linkphone:focus, .footer__linkphone:hover {
+  color: var(--accent-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__icon {
+  margin-left: 320px;
+}
+
+.footer__facebook {
+  margin-right: 30px;
+  fill: var(--accent-text-color);
+}
+
+.footer__facebook:focus, .footer__facebook:hover {
+  fill: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__instagram {
+  margin-right: 30px;
+  fill: var(--accent-text-color);
+}
+
+.footer__instagram:focus, .footer__instagram:hover {
+  fill: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__vk {
+  fill: var(--accent-text-color);
+}
+
+.footer__vk:focus, .footer__vk:hover {
+  fill: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header {
@@ -572,6 +604,26 @@ textarea::placeholder {
 
 .header__logo {
   margin-top: 32px;
+}
+
+.сontact__instagram {
+  fill: var(--accent-text-color);
+}
+
+.сontact__instagram:focus, .сontact__instagram:hover {
+  fill: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact__linkphone {
+  color: var(--accent-text-color);
+}
+
+.contact__linkphone:focus, .contact__linkphone:hover {
+  color: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sitenav {
@@ -682,12 +734,18 @@ textarea::placeholder {
   letter-spacing: 0.035em;
 }
 
-.hero .hero__button {
+.hero .herobutton {
   margin-top: 18px;
-  padding: 0;
   background-color: var(--border-color);
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+}
+
+.hero .herobutton:hover, .hero .herobutton:focus {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .hero .hero__buttonicon {
@@ -718,7 +776,7 @@ textarea::placeholder {
 }
 
 .aboutcourse__line::before {
-  left: -1em;
+  left: -1.2em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -732,7 +790,7 @@ textarea::placeholder {
 }
 
 .aboutcourse__line::after {
-  left: 1.3em;
+  left: 1.5em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -972,14 +1030,20 @@ input::placeholder {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-color: var(--border-color);
-  color: var(--accent-text-color);
   border: none;
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
+.terms__button:hover, .terms__button:focus {
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .terms__buttonicon {
   margin-left: 12px;
-  fill: var(--accent-text-color);
 }
 
 .howitwork__line {
@@ -996,7 +1060,7 @@ input::placeholder {
 }
 
 .howitwork__line::before {
-  left: -1em;
+  left: -1.2em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -1010,7 +1074,7 @@ input::placeholder {
 }
 
 .howitwork__line::after {
-  left: 1.3em;
+  left: 1.5em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -1096,6 +1160,7 @@ input::placeholder {
   width: 43px;
   height: 43px;
   border: none;
+  cursor: pointer;
 }
 
 .slider .slick-arrow.slick-prev {
@@ -1163,6 +1228,7 @@ input::placeholder {
   width: 43px;
   height: 43px;
   border: none;
+  cursor: pointer;
 }
 
 .slider2 .slick-arrow.slick-prev {
@@ -1210,6 +1276,7 @@ input::placeholder {
 
 .slider2__item {
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .sliderbig .slick-track {
@@ -1300,7 +1367,7 @@ input::placeholder {
 }
 
 .structure__line::before {
-  left: -1em;
+  left: -1.2em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -1314,7 +1381,7 @@ input::placeholder {
 }
 
 .structure__line::after {
-  left: 1.3em;
+  left: 1.5em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -1405,7 +1472,7 @@ input::placeholder {
 }
 
 .about__line::before {
-  left: -1em;
+  left: -1.2em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -1419,7 +1486,7 @@ input::placeholder {
 }
 
 .about__line::after {
-  left: 1.3em;
+  left: 1.5em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -1490,7 +1557,7 @@ input::placeholder {
 }
 
 .allcourse__line::before {
-  left: -1em;
+  left: -1.2em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -1504,7 +1571,7 @@ input::placeholder {
 }
 
 .allcourse__line::after {
-  left: 1.3em;
+  left: 1.5em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -1607,6 +1674,13 @@ input::placeholder {
   fill: var(--accent-text-color);
 }
 
+.allcourse__button:hover, .allcourse__button:focus {
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .allcourse__buttonicon {
   margin-top: -2px;
   margin-left: 11px;
@@ -1633,7 +1707,7 @@ input::placeholder {
 }
 
 .trysong__line::before {
-  left: -1em;
+  left: -2em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -1647,7 +1721,7 @@ input::placeholder {
 }
 
 .trysong__line::after {
-  left: 1.3em;
+  left: 2.2em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -1696,8 +1770,8 @@ input::placeholder {
 }
 
 .trysong__button {
-  background-color: var(--main-text-color);
   background-image: url(/images/1x2x/Hero/header1x.jpg);
+  background-color: var(--main-text-color);
   margin-top: 0;
   margin-left: 136px;
   font-family: "Cormorant Unicase";
@@ -1707,6 +1781,13 @@ input::placeholder {
   letter-spacing: 0.03em;
   color: var(--border-color);
   fill: var(--border-color);
+}
+
+.trysong__button:hover, .trysong__button:focus {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .trysong__buttonicon {
@@ -1740,7 +1821,7 @@ input::placeholder {
 }
 
 .join__line::before {
-  left: -1em;
+  left: -1.8em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -1754,7 +1835,7 @@ input::placeholder {
 }
 
 .join__line::after {
-  left: 1.3em;
+  left: 2em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -1801,12 +1882,18 @@ input::placeholder {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-color: var(--border-color);
-  color: var(--accent-text-color);
   border: none;
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
+.join__button:focus, .join__button:hover {
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .join__buttonicon {
   margin-left: 12px;
-  fill: var(--accent-text-color);
 }

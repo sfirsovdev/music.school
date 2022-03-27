@@ -57,8 +57,42 @@
 .footer__linkphone {
   text-decoration: none;
   color: var(--main-text-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+    transition: 0.5s;
+  }
 }
 
-.footer__svg {
-  margin-left: 333px;
+.footer__icon {
+  margin-left: 320px;
+}
+
+.footer__facebook {
+  margin-right: 30px;
+  fill: var(--accent-text-color);
+  &:focus,
+  &:hover {
+    fill: var(--main-text-color);
+    transition: 0.5s;
+  }
+}
+
+.footer__instagram {
+  margin-right: 30px;
+  fill: var(--accent-text-color);
+  &:focus,
+  &:hover {
+    fill: var(--main-text-color);
+    transition: 0.5s;
+  }
+}
+
+.footer__vk {
+  fill: var(--accent-text-color);
+  &:focus,
+  &:hover {
+    fill: var(--main-text-color);
+    transition: 0.5s;
+  }
 }

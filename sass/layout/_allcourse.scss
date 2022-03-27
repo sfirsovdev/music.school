@@ -13,7 +13,7 @@
 }
 
 .allcourse__line::before {
-  left: -1em;
+  left: -1.2em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -27,7 +27,7 @@
 }
 
 .allcourse__line::after {
-  left: 1.3em;
+  left: 1.5em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -123,6 +123,12 @@
   background-color: var(--border-color);
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    color: var(--main-text-color);
+    fill: var(--main-text-color);
+    transition: 0.5s;
+  }
 }
 
 .allcourse__buttonicon {

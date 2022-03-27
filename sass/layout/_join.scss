@@ -24,7 +24,7 @@
 }
 
 .join__line::before {
-  left: -1em;
+  left: -1.8em;
   margin: 0 0 0 -50%;
   content: "";
   position: relative;
@@ -38,7 +38,7 @@
 }
 
 .join__line::after {
-  left: 1.3em;
+  left: 2em;
   margin: 0 -50% 0 0;
   content: "";
   position: relative;
@@ -85,12 +85,17 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-color: var(--border-color);
-  color: var(--accent-text-color);
   border: none;
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+  &:focus,
+  &:hover {
+    color: var(--main-text-color);
+    fill: var(--main-text-color);
+    transition: 0.5s;
+  }
 }
 
 .join__buttonicon {
   margin-left: 12px;
-  fill: var(--accent-text-color);
 }

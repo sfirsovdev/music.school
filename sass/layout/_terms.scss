@@ -152,12 +152,17 @@ input::placeholder {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-color: var(--border-color);
-  color: var(--accent-text-color);
   border: none;
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    color: var(--main-text-color);
+    fill: var(--main-text-color);
+    transition: 0.5s;
+  }
 }
 
 .terms__buttonicon {
   margin-left: 12px;
-  fill: var(--accent-text-color);
 }
