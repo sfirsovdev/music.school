@@ -1,2 +1,64 @@
+.footer {
+  width: 100%;
+  border-top: solid 1px var(--main-text-color);
+}
 
+.footer__border {
+  border-top: solid 1px var(--main-text-color);
+}
 
+.footerbox {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.footer__rights {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer__adress {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.footer__adress2 {
+  margin-left: 40px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.footer__contacts {
+  margin-left: 221px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.footer__tel {
+  margin-left: 40px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.footer__linkphone {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.footer__svg {
+  margin-left: 333px;
+}

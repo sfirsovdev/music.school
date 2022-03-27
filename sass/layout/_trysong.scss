@@ -1,0 +1,96 @@
+.trysong {
+  background-color: var(--main-text-color);
+  background-image: url(/images/1x2x/Hero/header1x.jpg);
+  background-size: 100%;
+}
+
+.trysong__line {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 67px;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--second-text-color);
+}
+
+.trysong__line::before {
+  left: -1em;
+  margin: 0 0 0 -50%;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid #181818;
+}
+
+.trysong__line::after {
+  left: 1.3em;
+  margin: 0 -50% 0 0;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 2px;
+  vertical-align: middle;
+  background: #000;
+  background-clip: content-box;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.trysong__text {
+  text-align: center;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--border-color);
+}
+
+.trysong__list {
+  margin-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 88px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trysong__name {
+  margin-top: 25px;
+  padding-left: 6px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.trysong__button {
+  background-color: var(--main-text-color);
+  background-image: url(/images/1x2x/Hero/header1x.jpg);
+  margin-top: 0;
+  margin-left: 136px;
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--border-color);
+  fill: var(--border-color);
+}
+
+.trysong__buttonicon {
+  margin-top: -2px;
+  margin-left: 9px;
+}

@@ -127,13 +127,13 @@
   margin-right: 61px;
   border: none;
   width: 297px;
-  background-color: black;
+  background-color: var(--border-color);
 }
 
 .input-phone {
   border: none;
   width: 297px;
-  background-color: black;
+  background-color: var(--border-color);
 }
 
 input::placeholder {
@@ -146,29 +146,18 @@ input::placeholder {
 }
 
 .terms__button {
-  position: relative;
-  border: none;
-  margin-top: 76px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  width: 200px;
-  height: 50px;
-  background-color: black;
   font-family: "Cormorant Unicase";
   font-weight: 700;
   font-size: 24px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  line-height: 1.2;
+  background-color: var(--border-color);
   color: var(--accent-text-color);
+  border: none;
 }
 
 .terms__buttonicon {
-  position: absolute;
-  margin-left: 112px;
-  margin-top: -25px;
-  width: 25%;
-  height: 40%;
+  margin-left: 12px;
   fill: var(--accent-text-color);
 }

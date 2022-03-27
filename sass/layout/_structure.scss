@@ -30,7 +30,7 @@
   vertical-align: middle;
   background: #000;
   background-clip: content-box;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .structure__line::after {
@@ -44,5 +44,5 @@
   vertical-align: middle;
   background: #000;
   background-clip: content-box;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid var(--border-color);
 }

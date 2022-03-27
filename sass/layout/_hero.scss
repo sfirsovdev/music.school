@@ -4,7 +4,6 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  background-color: black;
 
   .hero__element {
     display: flex;
@@ -56,28 +55,15 @@
   }
 
   .hero__button {
-    border: none;
-    border-radius: 4px;
-    padding: 10px 32px;
-    margin-bottom: 0;
-
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    line-height: 30px;
-    background-color: var(--accent-text-color);
-    color: var(--text-color);
-    letter-spacing: 0.06em;
-    transition: color 250ms linear, background-color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      background-color: var(--background-text-color);
-    }
+    margin-top: 18px;
+    padding: 0;
+    background-color: var(--border-color);
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
   }
-}
 
-.hero__buttonicon {
-  margin-left: 11px;
-  margin-top: -2px;
+  .hero__buttonicon {
+    margin-top: -2px;
+    margin-left: 11px;
+  }
 }
