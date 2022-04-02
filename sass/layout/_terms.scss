@@ -107,16 +107,34 @@
   margin-top: 54px;
 }
 
+.terms__name {
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--text-color);
+}
+
 .terms__nameline::after {
-  margin-top: 32px;
   content: " ";
   border-bottom: solid 2px rgba(224, 152, 78, 0.7);
   width: 297px;
   display: block;
 }
 
+.terms__phone {
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--text-color);
+}
+
 .terms__phoneline::after {
-  margin-top: 32px;
   content: " ";
   border-bottom: solid 2px rgba(224, 152, 78, 0.7);
   width: 297px;
@@ -125,25 +143,31 @@
 
 .input-name {
   margin-right: 61px;
+  padding-top: 34px;
+  font-size: 18px;
   border: none;
   width: 297px;
   background-color: var(--border-color);
+  color: var(--text-color);
 }
 
 .input-phone {
+  padding-top: 34px;
+  font-size: 18px;
   border: none;
   width: 297px;
   background-color: var(--border-color);
+  color: var(--text-color);
 }
 
-input::placeholder {
-  font-family: "Cormorant Unicase";
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0.035em;
-  line-height: 1.2;
-  color: var(--main-text-color);
-}
+// input::placeholder {
+//   font-family: "Cormorant Unicase";
+//   font-weight: 400;
+//   font-size: 18px;
+//   letter-spacing: 0.035em;
+//   line-height: 1.2;
+//   color: var(--main-text-color);
+// }
 
 .terms__button {
   font-family: "Cormorant Unicase";

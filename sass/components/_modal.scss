@@ -2,7 +2,8 @@
   overflow-y: auto;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(23, 26, 36, 0.2);
+  background-color: black 50%;
+  backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
@@ -12,10 +13,9 @@
 
 .modal {
   width: calc(100% - 30px);
-  max-width: 450px;
-  min-height: 581px;
+  max-width: 516px;
+  min-height: 516px;
   background-color: var(--text-color);
-  border-radius: 5px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -35,26 +35,20 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: border-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus .modal__icon,
-  &:hover .modal__icon {
-    fill: #2196f3;
-  }
+  fill: var(--accent-text-color);
 }
 
 .modal__icon {
-  transition: fill 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--accent-text-color);
 }
 
 .is-hidden {
@@ -65,30 +59,39 @@
 }
 
 .modalform {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 30px;
-  @media screen and (min-width: 768px) {
-    padding-top: 46px;
-    padding-left: 41px;
-    padding-right: 39px;
-  }
+  width: 516px;
+  height: 516px;
+  padding-top: 50px;
+  padding-bottom: 72px;
+  padding-left: 111px;
+  padding-right: 108px;
 }
 
 .modalform__title {
-  padding-bottom: 12px;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
   text-align: center;
+  color: var(--border-color);
+}
+
+.modalform__text {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 297px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
 }
 
 .form-input {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  padding-left: 42px;
-  border-radius: 4px;
+  border: none;
+  border-bottom: 1px solid black;
   outline: none;
   width: 100%;
   height: 40px;
@@ -97,6 +100,31 @@
   &:focus {
     border-color: var(--accent-text-color);
     fill: var(--accent-text-color);
+  }
+}
+
+.form-input._error {
+  box-shadow: 0 0 15px red;
+}
+
+.form__button {
+  margin-top: 0;
+  padding-left: 24px;
+  background-color: var(--text-color);
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--border-color);
+  fill: var(--border-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+    transition: 0.5s;
   }
 }
 
@@ -120,13 +148,41 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form {
+  margin-right: auto;
+  margin-left: auto;
+  width: 297px;
+}
+
+.modalform__name {
+  margin-top: 40px;
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--border-color);
+}
+
+.modalform__phone {
+  margin-top: 40px;
+  font-family: "Cormorant Unicase";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  color: var(--border-color);
+}
+
 .form-label {
   position: absolute;
   padding-bottom: 10px;
   bottom: 100%;
   left: 0px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1px;
   line-height: 1.2px;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
@@ -137,7 +193,6 @@ textarea::placeholder {
 }
 
 .form-field {
-  margin-top: 30px;
   position: relative;
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -165,37 +220,40 @@ textarea::placeholder {
 
 .modalchecktext {
   display: block;
-  margin-top: 8px;
+  margin-top: 32px;
   margin-bottom: 30px;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-  }
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
   &::before {
     content: "";
     width: 16px;
     height: 15px;
     border: solid 2px #000000;
-    margin-right: 5px;
+    margin-right: 17px;
     display: inline-block;
     border-radius: 2px;
   }
-  .modal-check:checked + &::before {
-    background-image: url(../images/check-box/check.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
+
+  .modalchecktext2 {
+    padding-left: 36px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
   }
+
   .modal-check:checked + &::before {
     background-image: url(../images/check-box/check.svg);
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    border: none;
+    border: 1px solid;
   }
 }
 

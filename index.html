@@ -18,15 +18,7 @@
 
 <body class="body"> <!-- Начало body  -->
 
-    <div class="wrapper">
-    <!-- подключаем jquery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- подключаем cлайдер -->
-<script src="js/slick.min.js"></script>
-<!-- подключаем файл скриптов -->
-<script src="js/script.js"></script>
-</div>
-
+ 
     <header class="header">
         <div class="header container">
             <nav class="header__nav">
@@ -85,13 +77,13 @@
                         Velit officia consequat duis enim velit
                     mollit.<br> Exercitation veniam consequat sunt nostrud amet.</p>
 
-                        <button type="submit" class="herobutton buttonform">
+                        <button class="herobutton buttonform" type="button" data-modal-open>
                             ЗАПИСАТЬСЯ
                             <svg class="hero__buttonicon" width="21.83" height="20.93">
                                 <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced" ></use>
                             </svg>
                         </button>
-
+                        
                 </div>
             </div>
         </section>
@@ -170,22 +162,24 @@
             и получи индивидуальный <br> <span class="terms__formtitlespan">урок в подарок</span></h3>
             <div class="terms__property">
                 <div class="terms__nameline">
-            <h2 class="terms__name">
-    <input type="name" class="input-name" name="name" id="nameterms" placeholder="Имя:">
+            <h2 class="terms__name">Имя:</h2>
+    <input type="text" class="input-name" required="required" name="name" id="nameterms" placeholder="">
                 </div>
-            </h2>
+    
             <div class="terms__phoneline">
-            <h2 class="terms__phone">
-    <input type="phone" class="input-phone" name="phone" id="phoneterms" placeholder="Телефон:">
-            </h2>
+            <h2 class="terms__phone">Телефон:</h2>
+    <input type="text" class="input-phone" required="required" name="phone" id="phoneterms" placeholder="">
+            
             </div>
             </div>
-        <button type="submit" class="terms__button buttonform">
+        <button class="terms__button buttonform" type="submit">
             ЗАБРОНИРОВАТЬ
             <svg class="terms__buttonicon" width="34.5" height="20.43">
                 <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
             </svg>
         </button>
+
+
         </form>
     </div> <!-- Правый блок закончился -->
 </div>
@@ -382,7 +376,7 @@ consequat sunt nostrud amet.</p>
                 </svg></a></span></p>
     
         <h3 class="allcourse__description">Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint</h3>
-        <button type="submit" class="allcourse__button buttonform">
+        <button class="allcourse__button buttonform" type="button" data-modal-open>
             ЗАПИСАТЬСЯ
             <svg class="allcourse__buttonicon" width="21.83" height="20.93">
                 <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
@@ -398,7 +392,7 @@ consequat sunt nostrud amet.</p>
                         </svg></a></span></p>
             
                 <h3 class="allcourse__description">Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint</h3>
-                <button type="submit" class="allcourse__button buttonform">
+                <button type="submit" class="allcourse__button buttonform" data-modal-open>
                     ЗАПИСАТЬСЯ
                     <svg class="allcourse__buttonicon" width="21.83" height="20.93">
                         <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
@@ -414,7 +408,7 @@ consequat sunt nostrud amet.</p>
                             </svg></a></span></p>
                 
                     <h3 class="allcourse__description">Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint</h3>
-                    <button type="submit" class="allcourse__button buttonform">
+                    <button type="submit" class="allcourse__button buttonform" data-modal-open>
                         ЗАПИСАТЬСЯ
                         <svg class="allcourse__buttonicon" width="21.83" height="20.93">
                             <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
@@ -430,7 +424,7 @@ consequat sunt nostrud amet.</p>
                             </svg></a></span></p>
                 
                     <h3 class="allcourse__description">Amet minim mollit non deserunt ullamco<br> est sit aliqua dolor do amet sint</h3>
-                    <button type="submit" class="allcourse__button buttonform">
+                    <button type="submit" class="allcourse__button buttonform" data-modal-open>
                         ЗАПИСАТЬСЯ
                         <svg class="allcourse__buttonicon" width="21.83" height="20.93">
                             <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
@@ -456,7 +450,7 @@ consequat sunt nostrud amet.</p>
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
         <p class="trysong__name">Распевки А<span class="trysong__name2">
-            <button type="submit" class="trysong__button buttonform">
+            <button class="trysong__button buttonform" type="button" data-modal-open>
             ПЕРЕЙТИ
             <svg class="trysong__buttonicon" width="21.83" height="20.93">
                 <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
@@ -469,7 +463,7 @@ consequat sunt nostrud amet.</p>
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         <p class="trysong__name">Распевки А<span class="trysong__name2">
-                <button type="submit" class="trysong__button buttonform">
+                <button class="trysong__button buttonform" type="button" data-modal-open>
                     ПЕРЕЙТИ
                     <svg class="trysong__buttonicon" width="21.83" height="20.93">
                         <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
@@ -482,7 +476,7 @@ consequat sunt nostrud amet.</p>
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         <p class="trysong__name">Распевки А<span class="trysong__name2">
-                <button type="submit" class="trysong__button buttonform">
+                <button class="trysong__button buttonform" type="button" data-modal-open>
                     ПЕРЕЙТИ
                     <svg class="trysong__buttonicon" width="21.83" height="20.93">
                         <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
@@ -544,10 +538,82 @@ consequat sunt nostrud amet.</p>
 
 
 
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>
+            <svg class="modal__icon" width="25" height="25">
+                <use href="./images/svg/icons.svg#icon-Group-167"></use>
+            </svg>
+        </button>
+        <div class="modalform">
+            <h3 class="modalform__title">Оставьте Заявку</h3>
+            <p class="modalform__text">и мы свяжемся с вами в ближайшее время</p>
+            <form action="#" class="form">
+                <p class="modalform__name">Имя:</p>
+                <div class="form-field">
+                    <label for="name" class="form-label"></label>
+                    <div class="svgwrap">
+                        <input type="text" name="name" required="required" class="form-input" id="name" placeholder="">
+                        
+                    </div>
+                </div>
 
+                <div class="form-field">
+                    <label for="phone" class="form-label"></label>
+                    <p class="modalform__phone">Телефон:</p>
+                    <div class="input-svg-wrap">
+                        <input type="text" name="phone" required="required" class="form-input" id="phone" placeholder="">
+                    </div>
+                </div>
 
+                <div class="agreementsubmit">
+                    <div class="agreementfield">
+                        <input type="checkbox" name="policy" required="required" id="modal-check" class="modal-check is-hidden">
+                        <label for="modal-check" class="modalchecktext">
+                            Я даю свое согласие на обработку <span class="modalchecktext2">персональных данных</span>
+                    </label>
+                    </div>
+                    <button class="form__button buttonform" type="submit">
+                        ЗАБРОНИРОВАТЬ
+                        <svg class="form__buttonicon" width="34.5" height="20.43">
+                            <use href="./images/svg/icons.svg#icon-right-arrow-10-1-Traced"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="backdrop is-hidden">
+    <div class="modalthanks__box">
+        <button type="button" class="modalthanks__close" data-modal-close>
+            <svg class="modalthanks__icon" width="25" height="25">
+                <use href="./images/svg/icons.svg#icon-Group-167"></use>
+            </svg>
+        </button>
+    
+        <div class="modalthanks__image">
+            <img srcset="./images/1x2x/hero/Group 82_2x.jpg" src="./images/check-box/checkthanks.png"
+                alt="символ птички" />
+        </div>
+        <p class="modalthanks__text">Cпасибо!</p>
+        <p class="modalthanks__text2">Данные успешно отправлены</p>
+        </div>
+</div>
 
     </main>
+
+    <!-- подключаем jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- подключаем cлайдер -->
+    <script src="js/slick.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <!-- подключаем файл скриптов -->
+    <script src="js/script.js"></script>
+
+
+    <script src="./js/menu.js"></script>
     </body>
 </html>
 
