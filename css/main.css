@@ -114,7 +114,7 @@ body {
   max-width: 1400px;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 320px) {
   .container {
     width: 376px;
     padding-left: 15px;
@@ -844,8 +844,15 @@ textarea::placeholder {
 .hero .hero__textblock {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 100px;
-  text-align: left;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__textblock {
+    text-align: left;
+    margin-bottom: auto;
+    margin-left: 100px;
+  }
 }
 
 .hero .hero__p1 {
@@ -883,12 +890,19 @@ textarea::placeholder {
 }
 
 .hero .hero__p3 {
-  margin-top: 84px;
+  margin-top: 40px;
+  text-align: left;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__p3 {
+    margin-top: 84px;
+  }
 }
 
 .hero .hero__title {
@@ -911,7 +925,12 @@ textarea::placeholder {
 }
 
 .hero .herobutton {
-  margin-top: 18px;
+  margin-top: 39px;
+  padding-bottom: 68px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  font-size: 18px;
   background-color: var(--border-color);
   color: var(--main-text-color);
   fill: var(--main-text-color);
@@ -922,6 +941,14 @@ textarea::placeholder {
   fill: var(--accent-text-color);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .herobutton {
+    margin-top: 115px;
+    padding-bottom: 0;
+    font-size: 24px;
+  }
 }
 
 .hero .hero__buttonicon {
