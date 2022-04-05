@@ -10,12 +10,16 @@
 }
 
 .contact__linkphone {
-  text-decoration: none;
-  margin-top: 32px;
-  margin-left: 57px;
-  color: var(--accent-text-color);
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.5;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 32px;
+    margin-left: 57px;
+    color: var(--accent-text-color);
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }

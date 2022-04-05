@@ -6,10 +6,13 @@
   max-width: 1600px;
 
   .hero__element {
-    display: flex;
-    padding-top: 129px;
-    padding-bottom: 129px;
-    padding-left: 212px;
+    display: inline-block;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding-top: 129px;
+      padding-bottom: 129px;
+      padding-left: 212px;
+    }
   }
 
   .hero__textblock {
@@ -20,19 +23,27 @@
   }
 
   .hero__p1 {
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    display: none;
     color: var(--accent-text-color);
+    @media screen and (min-width: 768px) {
+      display: flex;
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 
   .hero__p2 {
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    display: none;
     color: var(--accent-text-color);
+    @media screen and (min-width: 768px) {
+      display: flex;
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 
   .hero__p3 {
@@ -45,13 +56,17 @@
   }
 
   .hero__title {
-    padding-right: 0;
-    font-family: "Cormorant Unicase";
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.2;
-    color: var(--accent-text-color);
-    letter-spacing: 0.035em;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding-right: 0;
+      font-family: "Cormorant Unicase";
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 1.2;
+      color: var(--accent-text-color);
+      letter-spacing: 0.035em;
+    }
   }
 
   .herobutton {
@@ -70,5 +85,51 @@
   .hero__buttonicon {
     margin-top: -2px;
     margin-left: 11px;
+  }
+}
+
+// Ниже стили для мобильной версии сайта
+
+.hero__mobile {
+  margin-top: 43px;
+  margin-bottom: 43px;
+  text-align: left;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hero__mobilep1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hero__mobiletitle {
+  padding-right: 0;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+  letter-spacing: 0.035em;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hero__mobilep2 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

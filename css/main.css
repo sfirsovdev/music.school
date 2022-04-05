@@ -114,9 +114,11 @@ body {
   max-width: 1400px;
 }
 
-@media screen and (min-width: 378px) {
+@media screen and (min-width: 376px) {
   .container {
-    width: 378px;
+    width: 376px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -599,14 +601,21 @@ textarea::placeholder {
 }
 
 .contact__linkphone {
-  text-decoration: none;
-  margin-top: 32px;
-  margin-left: 57px;
-  color: var(--accent-text-color);
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.5;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__linkphone {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 32px;
+    margin-left: 57px;
+    color: var(--accent-text-color);
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 .footer {
@@ -755,17 +764,23 @@ textarea::placeholder {
 }
 
 .sitenav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 32px;
-  margin-left: 245px;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sitenav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 32px;
+    margin-left: 245px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
 }
 
 .sitenav__link {
@@ -812,12 +827,18 @@ textarea::placeholder {
 }
 
 .hero .hero__element {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 129px;
-  padding-bottom: 129px;
-  padding-left: 212px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 129px;
+    padding-bottom: 129px;
+    padding-left: 212px;
+  }
 }
 
 .hero .hero__textblock {
@@ -828,19 +849,37 @@ textarea::placeholder {
 }
 
 .hero .hero__p1 {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  display: none;
   color: var(--accent-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .hero .hero__p1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
 .hero .hero__p2 {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  display: none;
   color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__p2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .hero .hero__p3 {
@@ -853,13 +892,22 @@ textarea::placeholder {
 }
 
 .hero .hero__title {
-  padding-right: 0;
-  font-family: "Cormorant Unicase";
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 1.2;
-  color: var(--accent-text-color);
-  letter-spacing: 0.035em;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 0;
+    font-family: "Cormorant Unicase";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    color: var(--accent-text-color);
+    letter-spacing: 0.035em;
+  }
 }
 
 .hero .herobutton {
@@ -879,6 +927,62 @@ textarea::placeholder {
 .hero .hero__buttonicon {
   margin-top: -2px;
   margin-left: 11px;
+}
+
+.hero__mobile {
+  margin-top: 43px;
+  margin-bottom: 43px;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__mobile {
+    display: none;
+  }
+}
+
+.hero__mobilep1 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__mobilep1 {
+    display: none;
+  }
+}
+
+.hero__mobiletitle {
+  padding-right: 0;
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 1.2;
+  color: var(--accent-text-color);
+  letter-spacing: 0.035em;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__mobiletitle {
+    display: none;
+  }
+}
+
+.hero__mobilep2 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__mobilep2 {
+    display: none;
+  }
 }
 
 .aboutcourse {

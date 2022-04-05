@@ -1,13 +1,16 @@
 .sitenav {
-  display: flex;
-  margin-top: 32px;
-  margin-left: 245px;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 245px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
 }
 
 .sitenav__link {
