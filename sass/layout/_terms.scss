@@ -1,7 +1,12 @@
-.terms {
+.terms__section {
   display: flex;
   justify-content: space-between;
   padding-bottom: 164px;
+}
+
+.terms {
+  display: flex;
+  justify-content: space-between;
 }
 
 .terms__left {

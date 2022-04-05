@@ -114,9 +114,9 @@ body {
   max-width: 1400px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 378px) {
   .container {
-    width: 480px;
+    width: 378px;
   }
 }
 
@@ -882,8 +882,6 @@ textarea::placeholder {
 }
 
 .aboutcourse {
-  padding-left: 80px;
-  padding-right: 80px;
   background-color: var(--background-color);
   background-image: url(/images/1x2x/Hero/header1x.jpg);
   background-size: 100%;
@@ -968,7 +966,7 @@ textarea::placeholder {
   color: var(--border-color);
 }
 
-.terms {
+.terms__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,6 +974,15 @@ textarea::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 164px;
+}
+
+.terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .terms__left {
@@ -1262,15 +1269,16 @@ textarea::placeholder {
   margin-right: auto;
   width: 1450px;
   margin-top: 64px;
-  margin-bottom: 172px;
+  padding-bottom: 172px;
   position: relative;
-  padding: 0px 289px;
+  padding-left: 289px;
+  padding-right: 289px;
 }
 
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
-  margin: -30px 0px 0px 0px;
+  margin: -130px 0px 0px 0px;
   z-index: 10;
   font-size: 0;
   width: 43px;
@@ -1285,7 +1293,7 @@ textarea::placeholder {
 }
 
 .slider .slick-arrow.slick-next {
-  margin: -35px 0px 0px 0px;
+  margin: -140px 0px 0px 0px;
   right: 185px;
   background: url("/images/svg/arrow-right.svg") 0 0/100% no-repeat;
 }
@@ -1466,8 +1474,6 @@ textarea::placeholder {
 }
 
 .structure {
-  padding-left: 80px;
-  padding-right: 80px;
   background-color: var(--background-color);
   background-image: url(/images/1x2x/Hero/header1x.jpg);
   background-size: 100%;
