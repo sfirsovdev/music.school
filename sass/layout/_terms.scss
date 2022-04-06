@@ -1,37 +1,62 @@
 .terms__section {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 164px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 164px;
+  }
 }
 
 .terms {
-  display: flex;
-  justify-content: space-between;
+  display: inline-block;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    display: flex;
+  }
 }
 
 .terms__left {
   display: inline-block;
-  padding-top: 135px;
+  padding-top: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 135px;
+  }
 }
 
 .terms__right {
   margin-top: 84px;
-  padding-top: 73px;
-  padding-bottom: 71px;
-  padding-left: 90px;
-  border: 2px solid #fe8202;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0;
+  @media screen and (min-width: 768px) {
+    border: 2px solid #fe8202;
+    padding-left: 90px;
+    padding-top: 73px;
+    padding-bottom: 71px;
+  }
 }
 
 .terms__form {
-  padding-right: 50px;
+  text-align: center;
+  padding-right: 0px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    padding-right: 50px;
+  }
 }
 
 .terms__title {
+  text-align: center;
   font-family: "Cormorant Unicase";
-  font-size: 36px;
+  font-weight: 400;
+  font-size: 28px;
   letter-spacing: 0.035em;
   line-height: 1.2;
   color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    font-size: 36px;
+  }
 }
 
 .terms__list {
@@ -87,12 +112,18 @@
 }
 
 .terms__formtitle {
+  text-align: left;
   font-family: "Cormorant Unicase";
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.035em;
   line-height: 1.2;
   color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .terms__formtitlespan {
@@ -103,13 +134,21 @@
   margin-top: 7px;
   content: " ";
   border-bottom: solid 2px #fe8202;
-  width: 220px;
+  width: 185px;
   display: block;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
 }
 
 .terms__property {
-  display: flex;
-  margin-top: 54px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
+    margin-top: 54px;
+    display: flex;
+  }
 }
 
 .terms__name {
@@ -125,8 +164,11 @@
 .terms__nameline::after {
   content: " ";
   border-bottom: solid 2px rgba(224, 152, 78, 0.7);
-  width: 297px;
+  width: 345px;
   display: block;
+  @media screen and (min-width: 768px) {
+    width: 297px;
+  }
 }
 
 .terms__phone {
@@ -139,21 +181,34 @@
   color: var(--text-color);
 }
 
+.terms__phoneline {
+  margin-top: 34px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
 .terms__phoneline::after {
   content: " ";
   border-bottom: solid 2px rgba(224, 152, 78, 0.7);
-  width: 297px;
+  width: 345px;
   display: block;
+  @media screen and (min-width: 768px) {
+    width: 297px;
+  }
 }
 
 .input-name {
   margin-right: 61px;
-  padding-top: 34px;
+  padding-top: 14px;
   font-size: 18px;
   border: none;
   width: 297px;
   background-color: var(--border-color);
   color: var(--text-color);
+  @media screen and (min-width: 768px) {
+    padding-top: 34px;
+  }
 }
 
 .input-phone {
@@ -165,19 +220,11 @@
   color: var(--text-color);
 }
 
-// input::placeholder {
-//   font-family: "Cormorant Unicase";
-//   font-weight: 400;
-//   font-size: 18px;
-//   letter-spacing: 0.035em;
-//   line-height: 1.2;
-//   color: var(--main-text-color);
-// }
-
 .terms__button {
+  margin-top: 50px;
   font-family: "Cormorant Unicase";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -189,6 +236,10 @@
     color: var(--main-text-color);
     fill: var(--main-text-color);
     transition: 0.5s;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 71px;
+    font-size: 24px;
   }
 }
 

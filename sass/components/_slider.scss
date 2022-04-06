@@ -12,12 +12,18 @@
 .slider {
   margin-left: auto;
   margin-right: auto;
-  width: 1450px;
   margin-top: 64px;
   padding-bottom: 172px;
   position: relative;
-  padding-left: 289px;
-  padding-right: 289px;
+  padding-left: 0;
+  padding-right: 0;
+  @media screen and (min-width: 768px) {
+    padding-left: 289px;
+    padding-right: 289px;
+    width: 1450px;
+    height: auto;
+    margin-top: 30px;
+  }
 }
 
 .slider .slick-arrow {
@@ -33,14 +39,21 @@
 }
 
 .slider .slick-arrow.slick-prev {
-  left: 185px;
-  background: url("/images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
+  display: none !important;
+  @media screen and (min-width: 768px) {
+    left: 185px;
+    background: url("/images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
+  }
 }
 
 .slider .slick-arrow.slick-next {
-  margin: -140px 0px 0px 0px;
-  right: 185px;
+  display: none !important;
   background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
+  @media screen and (min-width: 768px) {
+    margin: -140px 0px 0px 0px;
+    right: 185px;
+    background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
+  }
 }
 
 .slider .slick-dots {
