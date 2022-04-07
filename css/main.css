@@ -1565,7 +1565,7 @@ textarea::placeholder {
   margin-left: auto;
   margin-right: auto;
   margin-top: 64px;
-  padding-bottom: 172px;
+  padding-bottom: 70px;
   position: relative;
   padding-left: 0;
   padding-right: 0;
@@ -1575,6 +1575,7 @@ textarea::placeholder {
   .slider {
     padding-left: 289px;
     padding-right: 289px;
+    padding-bottom: 172px;
     width: 1450px;
     height: auto;
     margin-top: 30px;
@@ -1599,6 +1600,9 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .slider .slick-arrow.slick-prev {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     left: 185px;
     background: url("/images/svg/arrow-left.svg") 0 0/100% no-repeat;
   }
@@ -1611,6 +1615,9 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .slider .slick-arrow.slick-next {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     margin: -140px 0px 0px 0px;
     right: 185px;
     background: url("/images/svg/arrow-right.svg") 0 0/100% no-repeat;
@@ -1626,8 +1633,14 @@ textarea::placeholder {
 .slider .slick-dots li {
   list-style: none;
   margin: 0px 16px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .slider .slick-dots li {
+    margin-top: 40px;
+  }
 }
 
 .slider .slick-dots button {
@@ -1643,8 +1656,17 @@ textarea::placeholder {
 }
 
 .slick-list.draggable {
+  width: 345px;
+  height: 193px;
   border: solid 3px #fbfbfb;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .slick-list.draggable {
+    width: auto;
+    height: auto;
+  }
 }
 
 .sliderbox {
@@ -1803,46 +1825,79 @@ textarea::placeholder {
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  padding-top: 80.75px;
+  padding-top: 50px;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
+  letter-spacing: 0.035em;
   color: var(--second-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .structure__line {
+    padding-top: 80.75px;
+    font-size: 36px;
+  }
+}
+
 .structure__line::before {
-  left: -1.2em;
-  margin: 0 0 0 -50%;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid var(--border-color);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .structure__line::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -1.2em;
+    margin: 0 0 0 -50%;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid var(--border-color);
+  }
 }
 
 .structure__line::after {
-  left: 1.5em;
-  margin: 0 -50% 0 0;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid var(--border-color);
+  display: none;
 }
 
-.accordiondiv {
-  margin-top: 70px;
-  padding-bottom: 104px;
+@media screen and (min-width: 768px) {
+  .structure__line::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 1.5em;
+    margin: 0 -50% 0 0;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.accordionbox {
+  margin-top: 40px;
+  padding-bottom: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .accordionbox {
+    margin-top: 70px;
+    padding-bottom: 104px;
+  }
 }
 
 .accordion {
@@ -1853,7 +1908,8 @@ textarea::placeholder {
   padding-top: 14px;
   padding-bottom: 17px;
   padding-left: 30px;
-  width: 684px;
+  width: 345px;
+  height: 50px;
   border: none;
   border-radius: 5px;
   text-align: left;
@@ -1862,13 +1918,21 @@ textarea::placeholder {
   transition: 4s;
   font-family: "Cormorant Unicase";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.035em;
   line-height: 1.2;
 }
 
+@media screen and (min-width: 768px) {
+  .accordion {
+    margin-bottom: 20px;
+    width: 684px;
+    height: auto;
+    font-size: 24px;
+  }
+}
+
 .accordion__panel {
-  padding: 0 18px;
   display: none;
   overflow: hidden;
   font-family: "Poppins";
@@ -1879,17 +1943,39 @@ textarea::placeholder {
 
 .acordion__text {
   text-align: left;
-  margin-top: 6px;
-  margin-bottom: 45px;
+  margin-top: auto;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 684px;
+  width: 345px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
   color: var(--second-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .acordion__text {
+    font-size: 16px;
+    margin-top: 6;
+    margin-bottom: 45px;
+    width: 684px;
+  }
+}
+
 .accordion__down {
-  margin-left: 504px;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 190px;
   fill: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .accordion__down {
+    margin-top: auto;
+    margin-left: 504px;
+  }
 }
 
 .accordion.active .accordion__down {

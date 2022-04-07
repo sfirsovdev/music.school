@@ -9,38 +9,51 @@
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  padding-top: 80.75px;
+  padding-top: 50px;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
+  letter-spacing: 0.035em;
   color: var(--second-text-color);
+  @media screen and (min-width: 768px) {
+    padding-top: 80.75px;
+    font-size: 36px;
+  }
 }
 
 .structure__line::before {
-  left: -1.2em;
-  margin: 0 0 0 -50%;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid var(--border-color);
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    left: -1.2em;
+    margin: 0 0 0 -50%;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid var(--border-color);
+  }
 }
 
 .structure__line::after {
-  left: 1.5em;
-  margin: 0 -50% 0 0;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid var(--border-color);
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    left: 1.5em;
+    margin: 0 -50% 0 0;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid var(--border-color);
+  }
 }
