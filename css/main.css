@@ -1932,6 +1932,16 @@ textarea::placeholder {
   }
 }
 
+.accordionmob {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .accordionmob {
+    display: none;
+  }
+}
+
 .accordion__panel {
   display: none;
   overflow: hidden;
@@ -1985,61 +1995,172 @@ textarea::placeholder {
           transition-duration: 0.2s;
 }
 
+.accordion2__panel {
+  display: none;
+  overflow: hidden;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.accordionbox2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .accordionbox2 {
+    display: none;
+  }
+}
+
+.accordionbox2__text1 {
+  text-align: left;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .accordionbox2__text1 {
+    display: none;
+  }
+}
+
+.accordion2__text2 {
+  text-align: left;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .accordion2__text2 {
+    display: none;
+  }
+}
+
+.accordion2 {
+  margin-top: 20px;
+  background-color: var(--border-color);
+  border: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .accordion2 {
+    display: none;
+  }
+}
+
+.accordion2.active {
+  display: none;
+}
+
 .about {
   background-size: 100%;
 }
 
 .about__line {
-  padding-top: 100px;
+  padding-top: 57px;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   color: var(--main-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .about__line {
+    padding-top: 100px;
+    font-size: 36px;
+  }
+}
+
 .about__line::before {
-  left: -1.2em;
-  margin: 0 0 0 -50%;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid #fbfbfb;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about__line::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -1.2em;
+    margin: 0 0 0 -50%;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid #fbfbfb;
+  }
 }
 
 .about__line::after {
-  left: 1.5em;
-  margin: 0 -50% 0 0;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid #fbfbfb;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about__line::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 1.5em;
+    margin: 0 -50% 0 0;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid #fbfbfb;
+  }
 }
 
 .about__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   margin-top: 70px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .about__text {
-  margin-left: 79px;
-  width: 477px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about__text {
+    display: block;
+    margin-left: 79px;
+    width: 477px;
+  }
 }
 
 .about__text1 {
@@ -2057,6 +2178,16 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-text-color);
+}
+
+.about__picture {
+  width: 345px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__picture {
+    width: 546px;
+  }
 }
 
 .certificate {

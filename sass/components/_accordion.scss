@@ -36,6 +36,13 @@
   }
 }
 
+.accordionmob {
+  margin-top: 5px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .accordion__panel {
   display: none;
   overflow: hidden;
@@ -81,4 +88,66 @@
     transform: rotate(270deg);
     transition-duration: 0.2s;
   }
+}
+
+// Ниже второй аккордион с текстом для мобильной версии
+
+.accordion2__panel {
+  display: none;
+  overflow: hidden;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.accordionbox2 {
+  margin-top: 40px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.accordionbox2__text1 {
+  text-align: left;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.accordion2__text2 {
+  text-align: left;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.accordion2 {
+  margin-top: 20px;
+  background-color: var(--border-color);
+  border: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration-line: underline;
+  color: var(--text-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.accordion2.active {
+  display: none;
 }

@@ -3,54 +3,73 @@
 }
 
 .about__line {
-  padding-top: 100px;
+  padding-top: 57px;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    font-size: 36px;
+  }
 }
 
 .about__line::before {
-  left: -1.2em;
-  margin: 0 0 0 -50%;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid #fbfbfb;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    left: -1.2em;
+    margin: 0 0 0 -50%;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid #fbfbfb;
+  }
 }
 
 .about__line::after {
-  left: 1.5em;
-  margin: 0 -50% 0 0;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid #fbfbfb;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    left: 1.5em;
+    margin: 0 -50% 0 0;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid #fbfbfb;
+  }
 }
 
 .about__box {
-  display: flex;
+  display: inline-block;
   margin-top: 70px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .about__text {
-  margin-left: 79px;
-  width: 477px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 79px;
+    width: 477px;
+  }
 }
 
 .about__text1 {
@@ -68,4 +87,11 @@
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-text-color);
+}
+
+.about__picture {
+  width: 345px;
+  @media screen and (min-width: 768px) {
+    width: 546px;
+  }
 }

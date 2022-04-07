@@ -297,9 +297,18 @@ consequat sunt nostrud amet.</p>
     <div class="about container">
         <h2 class="about__line"> О нас</h2>
         <div class="about__box">
+
         <div class="about__image">
-            <img srcset="./images/1x2x/About/about.jpg" src="./images/1x2x/About/about.jpg"
-                alt="Девушка в белом платье" />
+            <picture class="about__picture">
+                <source srcset="./images/1x2x/about/about-desktop-1x.jpg 1x,
+                                                                    ./images/1x2x/about/about-desktop-1x.jpg 2x"
+                    media="(min-width:1200px)">
+            
+                <source srcset="./images/1x2x/about/about-mobile-1x.jpg 1x,
+                                                                        ./images/1x2x/about/about-mobile-2x.jpg 2x"
+                    media="(min-width:320px)">
+                <img src="./images/1x2x/about/about-desktop-1x.jpg" alt="Девушка в белом платье" />
+            </picture>
         </div>
         <div class="about__text">
             <p class="about__text1">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
@@ -316,6 +325,44 @@ consequat sunt nostrud amet.</p>
             mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             amet sint. Velit officia consequat duis enim</p>
         </div>
+
+        <div class="accordionbox2"> 
+            <p class="accordionbox2__text1">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+            mollit. Exercitation veniam consequat sunt nostrud amet.
+            
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+            mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button class="accordion2">Читать дальше</button>
+            <div class="accordion2__panel">
+                <p class="accordion2__text2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.
+                
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim
+                </p>
+            </div>
+        
+            <script>
+                var acc = document.getElementsByClassName("accordion2");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+        </div>
+      
+        
     </div>
     </div>
 </section>
