@@ -9,8 +9,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.slider2').slick({
-        arrows: true,
-        dots:true,
+        arrows: false,
+        dots:false,
         adaptiveHeight: false,
         vertical: true,
         slidesToShow: 3,
@@ -22,8 +22,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.sliderbig').slick({
-        arrows: false,
-        dots: false,
+        arrows: true,
+        dots: true,
         adaptiveHeight: false,
         slidesToShow: 1,
         fade: true,

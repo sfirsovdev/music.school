@@ -1694,8 +1694,15 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 70px;
-  margin-left: auto;
+  margin-top: 40px;
+  margin-left: -48px;
+}
+
+@media screen and (min-width: 768px) {
+  .sliderbox {
+    margin-top: 70px;
+    margin-left: auto;
+  }
 }
 
 .slider2 .slick-track {
@@ -1703,19 +1710,15 @@ textarea::placeholder {
 }
 
 .slider2 {
-  position: relative;
+  display: none;
 }
 
-.slider2 .slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin: -30px 0px 0px 0px;
-  z-index: 10;
-  font-size: 0;
-  width: 43px;
-  height: 43px;
-  border: none;
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .slider2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .slider2 .slick-arrow.slick-prev {
@@ -1724,13 +1727,6 @@ textarea::placeholder {
   left: 185px;
   top: 50%;
   background: url("/images/svg/arrow-left.svg") 0 0/100% no-repeat;
-}
-
-.slider2 .slick-arrow.slick-next {
-  margin: -35px 0px 0px 0px;
-  left: 1170px;
-  top: 50%;
-  background: url("/images/svg/arrow-right.svg") 0 0/100% no-repeat;
 }
 
 .slider2 .slick-dots {
@@ -1801,9 +1797,18 @@ textarea::placeholder {
 }
 
 .sliderbig .slick-arrow.slick-next {
+  display: none !important;
   margin: -35px 0px 0px 0px;
   left: 950px;
   background: url("/images/svg/arrow-right.svg") 0 0/100% no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .sliderbig .slick-arrow.slick-next {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
 }
 
 .sliderbig .slick-dots {
@@ -1815,8 +1820,15 @@ textarea::placeholder {
 .sliderbig .slick-dots li {
   list-style: none;
   margin: 0px 16px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sliderbig .slick-dots li {
+    display: none;
+    margin-top: 40px;
+  }
 }
 
 .sliderbig .slick-dots button {
@@ -2213,13 +2225,15 @@ textarea::placeholder {
 
 .certificate {
   margin-top: 50px;
-  margin-bottom: 120px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .certificate {
     margin-top: 120px;
     margin-bottom: 120px;
+    text-align: left;
   }
 }
 
@@ -2237,61 +2251,81 @@ textarea::placeholder {
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  padding-top: 67px;
+  padding-top: 70px;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   letter-spacing: 0.035em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .allcourse__line {
+    font-size: 36px;
+    padding-top: 67px;
+  }
 }
 
 .allcourse__line::before {
-  left: -1.2em;
-  margin: 0 0 0 -50%;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: var(--main-text-color);
-  background-clip: content-box;
-  border-bottom: 1px solid var(--main-text-color);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .allcourse__line::before {
+    display: block;
+    left: -1.2em;
+    margin: 0 0 0 -50%;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: var(--main-text-color);
+    background-clip: content-box;
+    border-bottom: 1px solid var(--main-text-color);
+  }
 }
 
 .allcourse__line::after {
-  left: 1.5em;
-  margin: 0 -50% 0 0;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: var(--main-text-color);
-  background-clip: content-box;
-  border-bottom: 1px solid var(--main-text-color);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .allcourse__line::after {
+    display: block;
+    left: 1.5em;
+    margin: 0 -50% 0 0;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: var(--main-text-color);
+    background-clip: content-box;
+    border-bottom: 1px solid var(--main-text-color);
+  }
 }
 
 .allcourse__text {
-  font-family: "Cormorant Unicase";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.035em;
-  color: var(--main-text-color);
-}
-
-.allcourse__text {
-  margin-top: 25px;
+  margin-top: 10px;
   font-family: "Poppins";
   font-style: italic;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.035em;
   color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .allcourse__text {
+    margin-top: 25px;
+    font-weight: 700;
+  }
 }
 
 .allcourse__list {
@@ -2300,19 +2334,37 @@ textarea::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 280px;
-  padding-right: 280px;
-  padding-bottom: 47px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .allcourse__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 70px;
+    padding-left: 280px;
+    padding-right: 280px;
+    padding-bottom: 47px;
+  }
 }
 
 .allcourse__item {
-  margin-bottom: 73px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .allcourse__item {
+    margin-bottom: 73px;
+  }
 }
 
 .allcourse__name {
@@ -2383,17 +2435,57 @@ textarea::placeholder {
 }
 
 .trysong__line {
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-align: center;
-  padding-top: 67px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .trysong__line {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 67px;
+    font-family: "Cormorant Unicase";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.035em;
+    color: var(--second-text-color);
+  }
+}
+
+.trysong__mobline {
+  padding-top: 46px;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
+  text-align: center;
   letter-spacing: 0.035em;
-  color: var(--second-text-color);
+  color: var(--border-color);
+}
+
+@media screen and (min-width: 768px) {
+  .trysong__mobline {
+    display: none;
+  }
+}
+
+.trysong__moblinespan {
+  font-family: "Cormorant Unicase";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.035em;
+  color: var(--border-color);
+}
+
+@media screen and (min-width: 768px) {
+  .trysong__moblinespan {
+    display: none;
+  }
 }
 
 .trysong__line::before {
@@ -2425,20 +2517,27 @@ textarea::placeholder {
 }
 
 .trysong__text {
-  text-align: center;
-  font-family: "Cormorant Unicase";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.035em;
-  color: var(--border-color);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .trysong__text {
+    display: block;
+    text-align: center;
+    font-family: "Cormorant Unicase";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.035em;
+    color: var(--border-color);
+  }
 }
 
 .trysong__list {
-  margin-top: 70px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 88px;
+  margin-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2447,6 +2546,25 @@ textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .trysong__list {
+    margin-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 88px;
+  }
+}
+
+.trusong__item {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .trusong__item {
+    margin-bottom: 0;
+  }
 }
 
 .trysong__name {
@@ -2463,7 +2581,7 @@ textarea::placeholder {
   background-image: url(/images/1x2x/Hero/header1x.jpg);
   background-color: var(--main-text-color);
   margin-top: 0;
-  margin-left: 136px;
+  margin-left: 128px;
   font-family: "Cormorant Unicase";
   font-weight: 700;
   font-size: 18px;
@@ -2480,6 +2598,12 @@ textarea::placeholder {
   transition: 0.5s;
 }
 
+@media screen and (min-width: 768px) {
+  .trysong__button {
+    margin-left: 136px;
+  }
+}
+
 .trysong__buttonicon {
   margin-top: -2px;
   margin-left: 9px;
@@ -2490,85 +2614,143 @@ textarea::placeholder {
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 60px;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.035em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .join__line {
+    padding-top: 120px;
+    font-size: 36px;
+  }
 }
 
 .join__line2 {
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.035em;
   color: var(--main-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .join__line2 {
+    font-size: 36px;
+  }
+}
+
 .join__line::before {
-  left: -1.8em;
-  margin: 0 0 0 -50%;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid var(--main-text-color);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .join__line::before {
+    display: block;
+    left: -1.8em;
+    margin: 0 0 0 -50%;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid var(--main-text-color);
+  }
 }
 
 .join__line::after {
-  left: 2em;
-  margin: 0 -50% 0 0;
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 50%;
-  height: 2px;
-  vertical-align: middle;
-  background: #000;
-  background-clip: content-box;
-  border-bottom: 1px solid var(--main-text-color);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .join__line::after {
+    display: block;
+    left: 2em;
+    margin: 0 -50% 0 0;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background: #000;
+    background-clip: content-box;
+    border-bottom: 1px solid var(--main-text-color);
+  }
 }
 
 .join__video {
-  margin-top: 70px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 866px;
+  width: 345px;
+  height: 193px;
   border: 3px solid var(--main-text-color);
   border-radius: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .join__video {
+    margin-top: 70px;
+    width: 863px;
+    height: 481px;
+  }
+}
+
+.join__video iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .join__text {
-  margin-top: 40px;
+  margin-top: 20px;
+  padding-left: 65px;
+  padding-right: 65px;
   text-align: center;
   font-family: "Poppins";
   font-style: italic;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--main-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .join__text {
+    margin-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+  }
+}
+
 .join__buttonbox {
   margin-top: 30px;
-  margin-bottom: 138px;
+  margin-bottom: 70px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .join__buttonbox {
+    margin-bottom: 138px;
+  }
 }
 
 .join__button {
   margin-top: 0;
   font-family: "Cormorant Unicase";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -2582,6 +2764,12 @@ textarea::placeholder {
   fill: var(--main-text-color);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .join__button {
+    font-size: 24px;
+  }
 }
 
 .join__buttonicon {
