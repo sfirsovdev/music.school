@@ -61,19 +61,19 @@
 }
 
 .slider .slick-arrow.slick-prev {
-  display: none;
+  display: none !important;
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: flex !important;
     left: 185px;
     background: url("/images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
   }
 }
 
 .slider .slick-arrow.slick-next {
-  display: none;
+  display: none !important;
   background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: flex !important;
     margin: -140px 0px 0px 0px;
     right: 185px;
     background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
