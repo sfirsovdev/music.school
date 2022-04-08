@@ -202,8 +202,8 @@ body {
 
 .modal__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -224,8 +224,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .modal__close {
-    width: calc(100% - 30px);
-    left: 50%;
+    left: 90%;
   }
 }
 
@@ -487,13 +486,6 @@ textarea::placeholder {
   margin-right: 17px;
   display: inline-block;
   border-radius: 2px;
-}
-
-@media screen and (min-width: 768px) {
-  .modalchecktext::before {
-    margin-top: 32px;
-    margin-bottom: 30px;
-  }
 }
 
 .modalchecktext .modalchecktext2 {
@@ -916,6 +908,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .footer__adress {
+    padding-left: 65px;
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -999,6 +992,7 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .footer__icon {
     margin-top: 0;
+    padding-left: 65px;
     text-align: left;
   }
 }
