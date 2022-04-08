@@ -156,8 +156,8 @@ body {
 
 .backdrop {
   overflow-y: auto;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: black 50%;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -171,9 +171,9 @@ body {
 }
 
 .modal {
-  width: calc(100% - 30px);
+  width: 345px;
   max-width: 516px;
-  min-height: 516px;
+  min-height: 320px;
   background-color: var(--text-color);
   position: fixed;
   top: 50%;
@@ -193,9 +193,10 @@ body {
           transform: scale(1.5) rotate(270deg);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modal {
-    max-width: 528px;
+    width: calc(100% - 30px);
+    left: 50%;
   }
 }
 
@@ -221,8 +222,21 @@ body {
   fill: var(--accent-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .modal__close {
+    width: calc(100% - 30px);
+    left: 50%;
+  }
+}
+
 .modal__icon {
-  fill: var(--accent-text-color);
+  width: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__icon {
+    width: auto;
+  }
 }
 
 .is-hidden {
@@ -233,23 +247,37 @@ body {
 }
 
 .modalform {
-  width: 516px;
   height: 516px;
-  padding-top: 50px;
-  padding-bottom: 72px;
-  padding-left: 111px;
-  padding-right: 108px;
+  padding-top: 68px;
+  padding-left: 10px;
+  padding-right: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .modalform {
+    width: 516px;
+    padding-top: 50px;
+    padding-bottom: 72px;
+    padding-left: 111px;
+    padding-right: 108px;
+  }
 }
 
 .modalform__title {
   font-family: "Cormorant Unicase";
   font-style: normal;
   font-weight: 400;
-  font-size: 33px;
+  font-size: 28px;
   line-height: 1.2;
   letter-spacing: 0.035em;
   text-align: center;
   color: var(--border-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modalform__title {
+    font-size: 33px;
+  }
 }
 
 .modalform__text {
@@ -287,12 +315,12 @@ body {
 
 .form__button {
   margin-top: 0;
-  padding-left: 24px;
+  padding-left: 47px;
   background-color: var(--text-color);
   font-family: "Cormorant Unicase";
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -305,6 +333,13 @@ body {
   fill: var(--accent-text-color);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .form__button {
+    font-size: 22px;
+    padding-left: 24px;
+  }
 }
 
 .coment {
@@ -353,7 +388,7 @@ textarea::placeholder {
 }
 
 .modalform__name {
-  margin-top: 40px;
+  margin-top: 37px;
   font-family: "Cormorant Unicase";
   font-style: normal;
   font-weight: 400;
@@ -363,8 +398,14 @@ textarea::placeholder {
   color: var(--border-color);
 }
 
+@media screen and (min-width: 768px) {
+  .modalform__name {
+    margin-top: 40px;
+  }
+}
+
 .modalform__phone {
-  margin-top: 40px;
+  margin-top: 34px;
   font-family: "Cormorant Unicase";
   font-style: normal;
   font-weight: 400;
@@ -372,6 +413,12 @@ textarea::placeholder {
   line-height: 1.2;
   letter-spacing: 0.035em;
   color: var(--border-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modalform__phone {
+    margin-top: 40px;
+  }
 }
 
 .form-label {
@@ -422,8 +469,8 @@ textarea::placeholder {
 
 .modalchecktext {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 30px;
+  margin-top: 33px;
+  margin-bottom: 37px;
   text-align: left;
   font-family: "Poppins";
   font-style: normal;
@@ -441,6 +488,13 @@ textarea::placeholder {
   margin-right: 17px;
   display: inline-block;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .modalchecktext::before {
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
 }
 
 .modalchecktext .modalchecktext2 {
@@ -512,9 +566,9 @@ textarea::placeholder {
 }
 
 .modalthanks {
-  width: calc(100% - 30px);
+  width: 345px;
   max-width: 516px;
-  min-height: 516px;
+  min-height: 320px;
   background-color: var(--text-color);
   border-radius: 5px;
   position: fixed;
@@ -535,9 +589,9 @@ textarea::placeholder {
           transform: scale(1.5) rotate(270deg);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modalthanks {
-    max-width: 528px;
+    width: calc(100% - 30px);
   }
 }
 
@@ -549,7 +603,13 @@ textarea::placeholder {
   background-color: var(--text-color);
   position: fixed;
   top: 39%;
-  left: 41%;
+  left: 4%;
+}
+
+@media screen and (min-width: 768px) {
+  .modalthanks__box {
+    left: 41%;
+  }
 }
 
 .modalthanks__image {
@@ -558,15 +618,22 @@ textarea::placeholder {
 }
 
 .modalthanks__close {
-  margin-top: 32px;
-  margin-right: 32px;
+  margin-top: 27px;
+  margin-right: 25px;
   background-color: var(--text-color);
   border: none;
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .modalthanks__close {
+    margin-top: 32px;
+    margin-right: 32px;
+  }
+}
+
 .modalthanks__text {
-  margin-top: 38px;
+  margin-top: 27px;
   text-align: center;
   font-family: "Cormorant Unicase";
   font-weight: 400;
@@ -576,15 +643,50 @@ textarea::placeholder {
   color: var(--border-color);
 }
 
+@media screen and (min-width: 768px) {
+  .modalthanks__text {
+    margin-top: 38px;
+  }
+}
+
 .modalthanks__text2 {
-  margin-top: 8px;
+  margin-top: 11px;
   text-align: center;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.035em;
   color: var(--border-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modalthanks__text2 {
+    margin-top: 8px;
+    font-size: 24px;
+  }
+}
+
+.modalthanks__icon {
+  width: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .modalthanks__icon {
+    width: auto;
+  }
+}
+
+.molalthanks__picture {
+  width: 84px;
+  height: 84px;
+}
+
+@media screen and (min-width: 768px) {
+  .molalthanks__picture {
+    width: auto;
+    height: auto;
+  }
 }
 
 .contact {
