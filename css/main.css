@@ -900,9 +900,9 @@ textarea::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "Poppins";
+  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16px;
   color: var(--main-text-color);
 }
 
@@ -915,7 +915,6 @@ textarea::placeholder {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 16px;
   }
 }
 
@@ -938,6 +937,7 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -952,6 +952,7 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .footer__contacts {
     display: block;
+    margin-top: auto;
     margin-left: 221px;
     font-size: 16px;
   }
@@ -992,7 +993,7 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .footer__icon {
     margin-top: 0;
-    padding-left: 65px;
+    padding-right: 65px;
     text-align: left;
   }
 }
