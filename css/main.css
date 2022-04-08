@@ -620,7 +620,6 @@ textarea::placeholder {
 
 .footer {
   width: 100%;
-  border-top: solid 1px var(--main-text-color);
 }
 
 .footer__border {
@@ -628,53 +627,115 @@ textarea::placeholder {
 }
 
 .footerbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 50px;
+  display: inline-block;
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .footerbox {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer__rights {
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
   text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__rights {
+    margin-bottom: 30px;
+  }
 }
 
 .footer__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Poppins";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__adress {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 16px;
+  }
 }
 
 .footer__adress2 {
   margin-left: 40px;
   font-family: "Poppins";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--main-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__adress2 {
+    font-size: 16px;
+  }
+}
+
 .footer__contacts {
-  margin-left: 221px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 0;
   font-family: "Poppins";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    display: block;
+    margin-left: 221px;
+    font-size: 16px;
+  }
 }
 
 .footer__tel {
   margin-left: 40px;
   font-family: "Poppins";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__tel {
+    font-size: 16px;
+  }
 }
 
 .footer__linkphone {
@@ -689,7 +750,16 @@ textarea::placeholder {
 }
 
 .footer__icon {
+  margin-top: 40px;
   margin-left: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__icon {
+    margin-top: 0;
+    text-align: left;
+  }
 }
 
 .footer__facebook {
