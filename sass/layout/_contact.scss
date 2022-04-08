@@ -1,12 +1,33 @@
 .contact {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
+.contactmob {
   display: flex;
   margin-top: 0;
-  margin-left: auto;
+  margin-left: 168px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .сontact__instagram {
   margin-top: 27px;
   margin-left: auto;
+}
+
+.сontactmob__instagram {
+  margin-top: 30px;
+  margin-left: auto;
+  fill: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .contact__linkphone {
@@ -21,5 +42,23 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.5;
+  }
+}
+
+.сontact__instagram {
+  fill: var(--accent-text-color);
+  &:focus,
+  &:hover {
+    fill: var(--main-text-color);
+    transition: 0.5s;
+  }
+}
+
+.contact__linkphone {
+  color: var(--accent-text-color);
+  &:focus,
+  &:hover {
+    color: var(--main-text-color);
+    transition: 0.5s;
   }
 }

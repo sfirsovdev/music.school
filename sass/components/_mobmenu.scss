@@ -1,0 +1,15 @@
+.open-menu-btn {
+  margin-top: 30px;
+  margin-left: 42px;
+  background-color: var(--border-color);
+  border: none;
+  fill: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  width: 30px;
+  height: 21px;
+}

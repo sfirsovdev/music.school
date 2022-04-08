@@ -689,17 +689,68 @@ textarea::placeholder {
   }
 }
 
+.open-menu-btn {
+  margin-top: 30px;
+  margin-left: 42px;
+  background-color: var(--border-color);
+  border: none;
+  fill: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu-btn {
+    display: none;
+  }
+}
+
+.menu-icon {
+  width: 30px;
+  height: 21px;
+}
+
 .contact {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
+.contactmob {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 0;
-  margin-left: auto;
+  margin-left: 168px;
+}
+
+@media screen and (min-width: 768px) {
+  .contactmob {
+    display: none;
+  }
 }
 
 .сontact__instagram {
   margin-top: 27px;
   margin-left: auto;
+}
+
+.сontactmob__instagram {
+  margin-top: 30px;
+  margin-left: auto;
+  fill: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .сontactmob__instagram {
+    display: none;
+  }
 }
 
 .contact__linkphone {
@@ -718,6 +769,26 @@ textarea::placeholder {
     font-size: 14px;
     line-height: 1.5;
   }
+}
+
+.сontact__instagram {
+  fill: var(--accent-text-color);
+}
+
+.сontact__instagram:focus, .сontact__instagram:hover {
+  fill: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact__linkphone {
+  color: var(--accent-text-color);
+}
+
+.contact__linkphone:focus, .contact__linkphone:hover {
+  color: var(--main-text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer {
@@ -913,26 +984,6 @@ textarea::placeholder {
 
 .header__logo {
   margin-top: 32px;
-}
-
-.сontact__instagram {
-  fill: var(--accent-text-color);
-}
-
-.сontact__instagram:focus, .сontact__instagram:hover {
-  fill: var(--main-text-color);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.contact__linkphone {
-  color: var(--accent-text-color);
-}
-
-.contact__linkphone:focus, .contact__linkphone:hover {
-  color: var(--main-text-color);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .sitenav {

@@ -10,21 +10,3 @@
 .header__logo {
   margin-top: 32px;
 }
-
-.сontact__instagram {
-  fill: var(--accent-text-color);
-  &:focus,
-  &:hover {
-    fill: var(--main-text-color);
-    transition: 0.5s;
-  }
-}
-
-.contact__linkphone {
-  color: var(--accent-text-color);
-  &:focus,
-  &:hover {
-    color: var(--main-text-color);
-    transition: 0.5s;
-  }
-}
