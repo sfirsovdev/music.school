@@ -10,7 +10,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.slider2').slick({
         arrows: true,
-        dots:false,
+        dots:true,
         adaptiveHeight: false,
         vertical: true,
         slidesToShow: 3,
