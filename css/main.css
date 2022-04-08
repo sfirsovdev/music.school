@@ -265,7 +265,6 @@ body {
 
 .modalform__title {
   font-family: "Cormorant Unicase";
-  font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.2;
@@ -703,9 +702,78 @@ textarea::placeholder {
   }
 }
 
+.close-menu-btn {
+  margin-top: 10px;
+  margin-left: 274px;
+  background-color: var(--main-text-color);
+  border: none;
+  fill: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .close-menu-btn {
+    display: none;
+  }
+}
+
 .menu-icon {
   width: 30px;
   height: 21px;
+}
+
+.menu-iconclose {
+  width: 30px;
+  height: 21px;
+}
+
+.mobmenu {
+  display: none;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: 999;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 15px;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .mobmenu {
+    display: none;
+    position: static;
+    background-color: initial;
+    top: auto;
+    width: auto;
+    height: auto;
+    z-index: 5;
+  }
+}
+
+.mobmenu.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.mobmenu__link {
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  text-align: center;
+  color: var(--border-color);
+  text-decoration: none;
 }
 
 .contact {
@@ -2015,6 +2083,7 @@ textarea::placeholder {
 }
 
 .sliderbig .slick-arrow.slick-prev {
+  display: none !important;
   left: 185px;
   background: url("/images/svg/arrow-left.svg") 0 0/100% no-repeat;
 }

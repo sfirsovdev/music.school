@@ -9,7 +9,64 @@
   }
 }
 
+.close-menu-btn {
+  margin-top: 10px;
+  margin-left: 274px;
+  background-color: var(--main-text-color);
+  border: none;
+  fill: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .menu-icon {
   width: 30px;
   height: 21px;
+}
+
+.menu-iconclose {
+  width: 30px;
+  height: 21px;
+}
+
+.mobmenu {
+  display: none;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: 999;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 15px;
+  background-color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: none;
+    position: static;
+    background-color: initial;
+    top: auto;
+    width: auto;
+    height: auto;
+    z-index: 5;
+  }
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.mobmenu__link {
+  font-family: "Cormorant Unicase";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
+  text-align: center;
+  color: var(--border-color);
+  text-decoration: none;
 }
