@@ -1,13 +1,13 @@
 @import "./utils/variables";
 
-@import "./base/_reset_style";
+@import "./base/reset_style";
 @import "./base/common";
 @import "./base/body";
 
 @import "./components/button";
 @import "./components/container";
 @import "./components/modal";
-@import "./components//modalthanks";
+@import "./components/modalthanks";
 @import "./components/mobmenu";
 
 @import "./layout/contact";

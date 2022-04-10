@@ -116,7 +116,6 @@ body {
 
 @media screen and (min-width: 320px) {
   .container {
-    width: 376px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -2855,6 +2854,12 @@ textarea::placeholder {
 }
 
 .trysong__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 25px;
   padding-left: 6px;
   font-family: "Poppins";

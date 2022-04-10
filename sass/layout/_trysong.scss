@@ -115,6 +115,8 @@
 }
 
 .trysong__name {
+  display: flex;
+  justify-content: space-between;
   margin-top: 25px;
   padding-left: 6px;
   font-family: "Poppins";
