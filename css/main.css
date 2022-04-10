@@ -2094,6 +2094,7 @@ textarea::placeholder {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    cursor: pointer;
   }
 }
 
