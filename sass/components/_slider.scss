@@ -65,18 +65,18 @@
   @media screen and (min-width: 768px) {
     display: flex !important;
     left: 185px;
-    background: url("/images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
+    background: url("../images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
   }
 }
 
 .slider .slick-arrow.slick-next {
   display: none !important;
-  background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
   @media screen and (min-width: 768px) {
     display: flex !important;
     margin: -140px 0px 0px 0px;
     right: 185px;
-    background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
+    background: url("../images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
   }
 }
 
@@ -145,7 +145,7 @@
   margin: -35px 0px 0px 0px;
   left: 185px;
   top: 50%;
-  background: url("/images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
 }
 
 .slider2 .slick-dots {
@@ -214,14 +214,14 @@
 .sliderbig .slick-arrow.slick-prev {
   display: none !important;
   left: 185px;
-  background: url("/images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
 }
 
 .sliderbig .slick-arrow.slick-next {
   display: none !important;
   margin: -35px 0px 0px 0px;
   left: 950px;
-  background: url("/images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
+  background: url("../images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
   @media screen and (min-width: 768px) {
     display: flex !important;
   }
