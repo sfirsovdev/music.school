@@ -2073,7 +2073,8 @@ textarea::placeholder {
 }
 
 .sliderbig {
-  width: auto;
+  width: 100%;
+  max-width: 874px;
   margin-left: 0;
   margin-right: auto;
   position: relative;
@@ -2163,8 +2164,6 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .sliderbig .slick-list.draggable {
-    display: none;
-    margin-top: 40px;
     height: 420px;
   }
 }
@@ -2859,18 +2858,20 @@ textarea::placeholder {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 11px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
   .trysong__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-top: 70px;
     padding-left: 30px;
     padding-right: 30px;
@@ -2941,6 +2942,16 @@ textarea::placeholder {
   height: 448px;
 }
 
+.trysong iframe {
+  display: block;
+  width: 100%;
+  height: 399px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .join__line {
   position: relative;
   overflow: hidden;
@@ -2949,7 +2960,7 @@ textarea::placeholder {
   padding-top: 60px;
   font-family: "Cormorant Unicase";
   font-weight: 400;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.035em;
@@ -2958,6 +2969,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .join__line {
+    font-size: 28px;
     padding-top: 120px;
     font-size: 36px;
   }
