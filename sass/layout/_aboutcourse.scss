@@ -77,6 +77,23 @@
   }
 }
 
+.aboutcourse__item::before {
+  left: 1.5em;
+  margin: -10px -50% 0px -16px;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 19%;
+  height: 2px;
+  vertical-align: middle;
+  background-clip: content-box;
+  transform: rotate(-90deg);
+  border-bottom: 1px solid gray;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .aboutcourse__title {
   font-family: "Cormorant Unicase";
   font-weight: 600;

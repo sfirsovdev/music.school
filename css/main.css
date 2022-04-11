@@ -32,8 +32,9 @@ ul {
 input,
 textarea,
 select {
-  -webkit-box-shadow: 0px 0px 0px 1px red;
-  box-shadow: 0px 0px 0px 1px red;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
 }
 
 html {
@@ -763,7 +764,8 @@ textarea::placeholder {
   text-align: center;
 }
 
-.mobmenu__link {
+.mobmenu__link,
+.mobmenu__linkphone {
   font-family: "Cormorant Unicase";
   font-weight: 400;
   font-size: 28px;
@@ -1401,6 +1403,27 @@ textarea::placeholder {
   .aboutcourse__item {
     padding-top: 60px;
     margin-right: 63px;
+  }
+}
+
+.aboutcourse__item::before {
+  left: 1.5em;
+  margin: -10px -50% 0px -16px;
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 19%;
+  height: 2px;
+  vertical-align: middle;
+  background-clip: content-box;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border-bottom: 1px solid gray;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutcourse__item::before {
+    display: none;
   }
 }
 
