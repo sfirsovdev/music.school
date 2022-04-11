@@ -90,8 +90,5 @@
 }
 
 .about__picture {
-  width: 345px;
-  @media screen and (min-width: 768px) {
-    width: 546px;
-  }
+  width: auto;
 }

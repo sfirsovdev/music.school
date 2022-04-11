@@ -107,23 +107,20 @@
 }
 
 .slick-list.draggable {
-  width: 345px;
-  height: 193px;
+  width: auto;
+  height: auto;
   border: solid 3px #fbfbfb;
   border-radius: 5px;
-  @media screen and (min-width: 768px) {
-    width: auto;
-    height: auto;
-  }
 }
 
 // тут заканчиваеться первый слайдер ------------!
 
 .sliderbox {
-  display: flex;
+  display: inline;
   margin-top: 40px;
   margin-left: -48px;
   @media screen and (min-width: 768px) {
+    display: flex;
     margin-top: 70px;
     margin-left: auto;
   }
@@ -188,12 +185,15 @@
 }
 
 .sliderbig {
-  width: 874px;
-  margin-left: 46px;
+  width: auto;
+  margin-left: 0;
   margin-right: auto;
   position: relative;
   padding-left: 0;
   z-index: 0;
+  @media screen and (min-width: 768px) {
+    margin-left: 46px;
+  }
 }
 
 .sliderbig__item {
@@ -257,4 +257,10 @@
 
 .sliderbig .slick-list.draggable {
   border: none;
+  height: 220px;
+  @media screen and (min-width: 768px) {
+    display: none;
+    margin-top: 40px;
+    height: 420px;
+  }
 }

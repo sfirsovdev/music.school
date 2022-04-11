@@ -11,7 +11,7 @@
 
 .close-menu-btn {
   margin-top: 10px;
-  margin-left: 274px;
+  margin-left: auto;
   background-color: var(--main-text-color);
   border: none;
   fill: var(--accent-text-color);
@@ -41,7 +41,7 @@
   z-index: 999;
   padding-top: 21px;
   padding-bottom: 48px;
-  padding-left: 40px;
+  padding-left: 15px;
   padding-right: 15px;
   background-color: #ffffff;
   @media screen and (min-width: 768px) {

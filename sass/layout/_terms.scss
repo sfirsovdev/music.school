@@ -89,6 +89,7 @@
 
 .terms__prices {
   display: flex;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
@@ -102,13 +103,16 @@
 }
 
 .terms__price {
-  margin-left: 99px;
+  margin-left: auto;
   font-family: "Cormorant Unicase";
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.035em;
   line-height: 1.2;
   color: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    margin-left: 99px;
+  }
 }
 
 .terms__formtitle {
@@ -164,8 +168,10 @@
 .terms__nameline::after {
   content: " ";
   border-bottom: solid 2px rgba(224, 152, 78, 0.7);
-  width: 345px;
   display: block;
+  @media screen and (min-width: 375px) {
+    width: 345px;
+  }
   @media screen and (min-width: 768px) {
     width: 297px;
   }
@@ -191,21 +197,26 @@
 .terms__phoneline::after {
   content: " ";
   border-bottom: solid 2px rgba(224, 152, 78, 0.7);
-  width: 345px;
   display: block;
+  @media screen and (min-width: 375px) {
+    width: 345px;
+  }
   @media screen and (min-width: 768px) {
     width: 297px;
   }
 }
 
 .input-name {
-  margin-right: 61px;
+  margin-right: 0;
   padding-top: 14px;
   font-size: 18px;
   border: none;
   width: 297px;
   background-color: var(--border-color);
   color: var(--text-color);
+  @media screen and (min-width: 375px) {
+    margin-right: 61px;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 34px;
   }

@@ -1,5 +1,7 @@
 .header {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .header__nav {

@@ -9,6 +9,10 @@
 }
 
 .accordion {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
   background-color: var(--accent-text-color);
   color: var(--main-text-color);
@@ -16,7 +20,9 @@
   padding-top: 14px;
   padding-bottom: 17px;
   padding-left: 30px;
-  width: 345px;
+  padding-right: 15px;
+  max-width: 684px;
+  width: 100%;
   height: 50px;
   border: none;
   border-radius: 5px;
@@ -29,8 +35,6 @@
   letter-spacing: 0.035em;
   line-height: 1.2;
   @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
-    width: 684px;
     height: auto;
     font-size: 24px;
   }
@@ -73,13 +77,13 @@
 }
 
 .accordion__down {
-  position: absolute;
+  // position: absolute;
   margin-top: -5px;
-  margin-left: 190px;
+  // margin-left: 190px;
   fill: var(--main-text-color);
   @media screen and (min-width: 768px) {
     margin-top: auto;
-    margin-left: 504px;
+    // margin-left: 504px;
   }
 }
 
