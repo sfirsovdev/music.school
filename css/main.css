@@ -176,7 +176,7 @@ body {
 }
 
 .modal {
-  width: 345px;
+  width: 100%px;
   max-width: 516px;
   min-height: 320px;
   background-color: var(--text-color);
@@ -235,6 +235,12 @@ body {
 
 .modal__icon {
   width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__icon {
+    width: auto;
+  }
 }
 
 .is-hidden {

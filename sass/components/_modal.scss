@@ -12,7 +12,7 @@
 }
 
 .modal {
-  width: 345px;
+  width: 100%px;
   max-width: 516px;
   min-height: 320px;
   background-color: var(--text-color);
@@ -54,9 +54,9 @@
 
 .modal__icon {
   width: auto;
-  // @media screen and (min-width: 768px) {
-  //   width: auto;
-  // }
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
 }
 
 .is-hidden {
