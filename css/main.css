@@ -835,6 +835,12 @@ textarea::placeholder {
   fill: var(--accent-text-color);
 }
 
+.сontactmob__instagram:hover, .сontactmob__instagram:focus {
+  fill: var(--text-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media screen and (min-width: 768px) {
   .сontactmob__instagram {
     display: none;

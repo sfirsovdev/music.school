@@ -24,6 +24,11 @@
   margin-top: 30px;
   margin-left: auto;
   fill: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--text-color);
+    transition: 0.5s;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
