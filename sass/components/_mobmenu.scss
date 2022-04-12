@@ -10,8 +10,9 @@
 }
 
 .close-menu-btn {
-  margin-top: 10px;
-  margin-left: auto;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 186px;
   background-color: var(--main-text-color);
   border: none;
   fill: var(--accent-text-color);
@@ -39,9 +40,9 @@
   width: 100%;
   height: 50vh;
   z-index: 999;
-  padding-top: 21px;
+  padding-top: 35px;
   padding-bottom: 48px;
-  padding-left: 15px;
+  padding-left: 75px;
   padding-right: 15px;
   background-color: #ffffff;
   @media screen and (min-width: 768px) {
@@ -55,7 +56,7 @@
   }
   &.is-open {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     text-align: center;
   }
 }
@@ -75,4 +76,5 @@
 .mobmenu-top {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
