@@ -703,9 +703,7 @@ textarea::placeholder {
 }
 
 .close-menu-btn {
-  position: absolute;
-  margin-top: -5px;
-  margin-left: 186px;
+  margin-left: auto;
   background-color: var(--main-text-color);
   border: none;
   fill: var(--accent-text-color);
@@ -736,9 +734,9 @@ textarea::placeholder {
   width: 100%;
   height: 50vh;
   z-index: 999;
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 48px;
-  padding-left: 75px;
+  padding-left: 15px;
   padding-right: 15px;
   background-color: #ffffff;
 }
@@ -759,6 +757,10 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
