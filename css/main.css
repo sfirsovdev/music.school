@@ -704,7 +704,7 @@ textarea::placeholder {
 
 .close-menu-btn {
   margin-left: auto;
-  background-color: var(--main-text-color);
+  background-color: var(--text-text-color);
   border: none;
   fill: var(--accent-text-color);
 }
@@ -787,6 +787,10 @@ textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.mobmenu__phonebox {
+  margin-top: 20px;
 }
 
 .contact {
