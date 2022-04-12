@@ -732,7 +732,7 @@ textarea::placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh;
+  height: 50%;
   z-index: 999;
   padding-top: 30px;
   padding-bottom: 48px;
@@ -790,6 +790,10 @@ textarea::placeholder {
 }
 
 .mobmenu__phonebox {
+  margin-top: 20px;
+}
+
+.mobmenu__list {
   margin-top: 20px;
 }
 
