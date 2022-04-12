@@ -77,6 +77,14 @@
   }
 }
 
+.aboutcourse__item {
+  &:first-child {
+    &::before {
+      border: none;
+    }
+  }
+}
+
 .aboutcourse__item::before {
   left: 1.5em;
   margin: -10px -50% 0px -16px;
