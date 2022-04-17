@@ -3100,6 +3100,8 @@ textarea::placeholder {
   background-image: url(/images/1x2x/Hero/header1x.jpg);
   background-color: var(--main-text-color);
   margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
   font-family: "Cormorant Unicase";
   font-weight: 700;
   font-size: 18px;
