@@ -890,11 +890,11 @@ textarea::placeholder {
 }
 
 .footer__border {
+  min-width: 100%;
   border-top: solid 1px var(--main-text-color);
 }
 
 .footerbox {
-  display: inline-block;
   padding-top: 40px;
 }
 

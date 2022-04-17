@@ -3,11 +3,11 @@
 }
 
 .footer__border {
+  min-width: 100%;
   border-top: solid 1px var(--main-text-color);
 }
 
 .footerbox {
-  display: inline-block;
   padding-top: 40px;
   @media screen and (min-width: 1200px) {
     padding-top: 50px;
