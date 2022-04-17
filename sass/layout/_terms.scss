@@ -3,6 +3,9 @@
   justify-content: space-between;
   padding-bottom: 60px;
   @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-bottom: 164px;
   }
 }
@@ -10,6 +13,10 @@
 .terms {
   display: inline-block;
   @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
     justify-content: space-between;
     display: flex;
   }
@@ -19,6 +26,10 @@
   display: inline-block;
   padding-top: 60px;
   @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 135px;
   }
 }
@@ -30,9 +41,12 @@
   padding-left: 0;
   @media screen and (min-width: 768px) {
     border: 2px solid #fe8202;
-    padding-left: 90px;
+    padding-left: 40px;
     padding-top: 73px;
     padding-bottom: 71px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 90px;
   }
 }
 
@@ -146,7 +160,6 @@
 }
 
 .terms__property {
-  display: inline-block;
   text-align: left;
   margin-top: 40px;
   @media screen and (min-width: 768px) {

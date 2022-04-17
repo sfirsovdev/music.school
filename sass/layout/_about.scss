@@ -1,5 +1,11 @@
 .about {
   background-size: 100%;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .about__line {
@@ -14,8 +20,11 @@
   line-height: 1.2;
   color: var(--main-text-color);
   @media screen and (min-width: 768px) {
-    padding-top: 100px;
+    padding-top: 80px;
     font-size: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
   }
 }
 
@@ -58,7 +67,7 @@
 .about__box {
   display: inline-block;
   margin-top: 70px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -67,6 +76,13 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    width: 477px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-top: auto;
     margin-left: 79px;
     width: 477px;
   }

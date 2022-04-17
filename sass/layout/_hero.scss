@@ -10,8 +10,12 @@
     @media screen and (min-width: 768px) {
       display: flex;
       padding-top: 129px;
-      padding-bottom: 129px;
+      padding-bottom: 80px;
+      padding-left: 50px;
+    }
+    @media screen and (min-width: 1200px) {
       padding-left: 212px;
+      padding-bottom: 129px;
     }
   }
 
@@ -22,6 +26,9 @@
     @media screen and (min-width: 768px) {
       text-align: left;
       margin-bottom: auto;
+      margin-left: 50px;
+    }
+    @media screen and (min-width: 1200px) {
       margin-left: 100px;
     }
   }
@@ -59,6 +66,9 @@
     line-height: 1.5;
     color: var(--text-color);
     @media screen and (min-width: 768px) {
+      margin-top: 50px;
+    }
+    @media screen and (min-width: 1200px) {
       margin-top: 84px;
     }
   }
@@ -94,9 +104,12 @@
       transition: 0.5s;
     }
     @media screen and (min-width: 768px) {
-      margin-top: 115px;
+      margin-top: 80px;
       padding-bottom: 0;
       font-size: 24px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 115px;
     }
   }
 

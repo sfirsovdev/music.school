@@ -79,19 +79,34 @@
   padding-right: 0;
   padding-bottom: 35px;
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 47px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-left: 280px;
     padding-right: 280px;
-    padding-bottom: 47px;
   }
 }
 
 .allcourse__item {
   margin-bottom: 50px;
+  @media screen and (min-width: 640px) {
+    margin-left: 10px;
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 73px;
+    margin-left: auto;
   }
+}
+
+.allcource__picture {
+  width: 100%;
+  max-width: 300px;
 }
 
 .allcourse__name {
@@ -104,13 +119,16 @@
 }
 
 .allcourse__name2 {
-  margin-left: 156px;
+  margin-left: 142px;
   font-family: "Cormorant Unicase";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.035em;
   color: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    margin-left: 152px;
+  }
 }
 
 .allcourse__level {
@@ -123,7 +141,10 @@
 }
 
 .allcourse__svg {
-  margin-left: 94px;
+  margin-left: 82px;
+  @media screen and (min-width: 768px) {
+    margin-left: 92px;
+  }
 }
 
 .allcourse__description {

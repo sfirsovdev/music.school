@@ -135,7 +135,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1400px;
   }
@@ -801,7 +801,7 @@ textarea::placeholder {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -898,7 +898,7 @@ textarea::placeholder {
   padding-top: 40px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footerbox {
     padding-top: 50px;
     display: -webkit-box;
@@ -940,7 +940,7 @@ textarea::placeholder {
   color: var(--main-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__adress {
     padding-left: 65px;
     display: block;
@@ -961,7 +961,7 @@ textarea::placeholder {
   color: var(--main-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__adress2 {
     font-size: 16px;
   }
@@ -983,7 +983,7 @@ textarea::placeholder {
   color: var(--main-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__contacts {
     display: block;
     margin-top: auto;
@@ -1001,7 +1001,7 @@ textarea::placeholder {
   color: var(--main-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__tel {
     font-size: 16px;
   }
@@ -1024,7 +1024,7 @@ textarea::placeholder {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__icon {
     margin-top: 0;
     padding-right: 65px;
@@ -1158,8 +1158,15 @@ textarea::placeholder {
     display: -ms-flexbox;
     display: flex;
     padding-top: 129px;
-    padding-bottom: 129px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero__element {
     padding-left: 212px;
+    padding-bottom: 129px;
   }
 }
 
@@ -1173,6 +1180,12 @@ textarea::placeholder {
   .hero .hero__textblock {
     text-align: left;
     margin-bottom: auto;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero__textblock {
     margin-left: 100px;
   }
 }
@@ -1223,6 +1236,12 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .hero .hero__p3 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero__p3 {
     margin-top: 84px;
   }
 }
@@ -1267,9 +1286,15 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .hero .herobutton {
-    margin-top: 115px;
+    margin-top: 80px;
     padding-bottom: 0;
     font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .herobutton {
+    margin-top: 115px;
   }
 }
 
@@ -1488,6 +1513,12 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .terms__section {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .terms__section {
     padding-bottom: 164px;
   }
 }
@@ -1498,6 +1529,13 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .terms {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .terms {
+    text-align: left;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1514,6 +1552,13 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .terms__left {
+    padding-top: 80px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .terms__left {
     padding-top: 135px;
   }
 }
@@ -1528,9 +1573,15 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .terms__right {
     border: 2px solid #fe8202;
-    padding-left: 90px;
+    padding-left: 40px;
     padding-top: 73px;
     padding-bottom: 71px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .terms__right {
+    padding-left: 90px;
   }
 }
 
@@ -1664,7 +1715,6 @@ textarea::placeholder {
 }
 
 .terms__property {
-  display: inline-block;
   text-align: left;
   margin-top: 40px;
 }
@@ -1943,7 +1993,7 @@ textarea::placeholder {
   padding-right: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .slider {
     padding-left: 289px;
     padding-right: 289px;
@@ -1991,7 +2041,7 @@ textarea::placeholder {
   display: none !important;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .slider .slick-arrow.slick-prev {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -2006,7 +2056,7 @@ textarea::placeholder {
   background: url("../images/svg/arrow-right.svg") 0 0/100% no-repeat;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .slider .slick-arrow.slick-next {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -2079,7 +2129,7 @@ textarea::placeholder {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .slider2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2143,7 +2193,7 @@ textarea::placeholder {
   z-index: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sliderbig {
     margin-left: 46px;
   }
@@ -2173,16 +2223,16 @@ textarea::placeholder {
 .sliderbig .slick-arrow.slick-next {
   display: none !important;
   margin: -35px 0px 0px 0px;
-  left: 950px;
   background: url("../images/svg/arrow-right.svg") 0 0/100% no-repeat;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .sliderbig .slick-arrow.slick-next {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     cursor: pointer;
+    left: 950px;
   }
 }
 
@@ -2311,6 +2361,12 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .accordionbox {
     margin-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .accordionbox {
     padding-bottom: 104px;
   }
 }
@@ -2492,6 +2548,18 @@ textarea::placeholder {
   background-size: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .about {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    text-align: left;
+  }
+}
+
 .about__line {
   padding-top: 57px;
   position: relative;
@@ -2507,8 +2575,14 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .about__line {
-    padding-top: 100px;
+    padding-top: 80px;
     font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__line {
+    padding-top: 100px;
   }
 }
 
@@ -2563,7 +2637,7 @@ textarea::placeholder {
   margin-top: 70px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .about__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2578,6 +2652,16 @@ textarea::placeholder {
 @media screen and (min-width: 768px) {
   .about__text {
     display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    width: 477px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__text {
+    display: block;
+    margin-top: auto;
     margin-left: 79px;
     width: 477px;
   }
@@ -2612,9 +2696,16 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .certificate {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .certificate {
     margin-top: 120px;
     margin-bottom: 120px;
-    text-align: left;
   }
 }
 
@@ -2728,13 +2819,25 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .allcourse__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 47px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .allcourse__list {
     padding-left: 280px;
     padding-right: 280px;
-    padding-bottom: 47px;
   }
 }
 
@@ -2742,10 +2845,22 @@ textarea::placeholder {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 640px) {
+  .allcourse__item {
+    margin-left: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .allcourse__item {
     margin-bottom: 73px;
+    margin-left: auto;
   }
+}
+
+.allcource__picture {
+  width: 100%;
+  max-width: 300px;
 }
 
 .allcourse__name {
@@ -2758,13 +2873,19 @@ textarea::placeholder {
 }
 
 .allcourse__name2 {
-  margin-left: 156px;
+  margin-left: 142px;
   font-family: "Cormorant Unicase";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.035em;
   color: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .allcourse__name2 {
+    margin-left: 152px;
+  }
 }
 
 .allcourse__level {
@@ -2777,7 +2898,13 @@ textarea::placeholder {
 }
 
 .allcourse__svg {
-  margin-left: 94px;
+  margin-left: 82px;
+}
+
+@media screen and (min-width: 768px) {
+  .allcourse__svg {
+    margin-left: 92px;
+  }
 }
 
 .allcourse__description {
@@ -2923,7 +3050,7 @@ textarea::placeholder {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .trysong__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2942,9 +3069,18 @@ textarea::placeholder {
 
 .trusong__item {
   margin-bottom: 50px;
+  max-width: 345px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
+  .trusong__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .trusong__item {
     margin-bottom: 0;
   }
@@ -2984,12 +3120,6 @@ textarea::placeholder {
   fill: var(--accent-text-color);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-@media screen and (min-width: 768px) {
-  .trysong__button {
-    margin-left: 136px;
-  }
 }
 
 .trysong__buttonicon {
@@ -3098,6 +3228,7 @@ textarea::placeholder {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 345px;
   width: auto;
   height: auto;
   border: 3px solid var(--main-text-color);
@@ -3106,8 +3237,8 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .join__video {
+    max-width: 862px;
     margin-top: 70px;
-    width: 863px;
     height: 481px;
   }
 }
@@ -3146,6 +3277,12 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
+  .join__buttonbox {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .join__buttonbox {
     margin-bottom: 138px;
   }

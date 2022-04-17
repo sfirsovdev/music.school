@@ -17,7 +17,7 @@
   position: relative;
   padding-left: 0;
   padding-right: 0;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     padding-left: 289px;
     padding-right: 289px;
     padding-bottom: 172px;
@@ -62,7 +62,7 @@
 
 .slider .slick-arrow.slick-prev {
   display: none !important;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex !important;
     left: 185px;
     background: url("../images/svg/arrow-left.svg") 0 0 / 100% no-repeat;
@@ -72,7 +72,7 @@
 .slider .slick-arrow.slick-next {
   display: none !important;
   background: url("../images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex !important;
     margin: -140px 0px 0px 0px;
     right: 185px;
@@ -132,7 +132,7 @@
 
 .slider2 {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -192,7 +192,7 @@
   position: relative;
   padding-left: 0;
   z-index: 0;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 46px;
   }
 }
@@ -221,11 +221,11 @@
 .sliderbig .slick-arrow.slick-next {
   display: none !important;
   margin: -35px 0px 0px 0px;
-  left: 950px;
   background: url("../images/svg/arrow-right.svg") 0 0 / 100% no-repeat;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex !important;
     cursor: pointer;
+    left: 950px;
   }
 }
 
