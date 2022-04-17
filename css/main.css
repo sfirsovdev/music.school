@@ -2864,6 +2864,9 @@ textarea::placeholder {
 }
 
 .allcourse__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 18px;
   font-family: "Cormorant Unicase";
   font-weight: 700;
@@ -2873,7 +2876,7 @@ textarea::placeholder {
 }
 
 .allcourse__name2 {
-  margin-left: 142px;
+  margin-left: auto;
   font-family: "Cormorant Unicase";
   font-weight: 400;
   font-size: 16px;
@@ -2882,13 +2885,10 @@ textarea::placeholder {
   color: var(--accent-text-color);
 }
 
-@media screen and (min-width: 768px) {
-  .allcourse__name2 {
-    margin-left: 152px;
-  }
-}
-
 .allcourse__level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 10px;
   font-family: "Cormorant Unicase";
   font-weight: 700;
@@ -2898,13 +2898,7 @@ textarea::placeholder {
 }
 
 .allcourse__svg {
-  margin-left: 82px;
-}
-
-@media screen and (min-width: 768px) {
-  .allcourse__svg {
-    margin-left: 92px;
-  }
+  margin-left: auto;
 }
 
 .allcourse__description {

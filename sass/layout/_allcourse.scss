@@ -110,6 +110,7 @@
 }
 
 .allcourse__name {
+  display: flex;
   margin-top: 18px;
   font-family: "Cormorant Unicase";
   font-weight: 700;
@@ -119,19 +120,17 @@
 }
 
 .allcourse__name2 {
-  margin-left: 142px;
+  margin-left: auto;
   font-family: "Cormorant Unicase";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.035em;
   color: var(--accent-text-color);
-  @media screen and (min-width: 768px) {
-    margin-left: 152px;
-  }
 }
 
 .allcourse__level {
+  display: flex;
   margin-top: 10px;
   font-family: "Cormorant Unicase";
   font-weight: 700;
@@ -141,10 +140,7 @@
 }
 
 .allcourse__svg {
-  margin-left: 82px;
-  @media screen and (min-width: 768px) {
-    margin-left: 92px;
-  }
+  margin-left: auto;
 }
 
 .allcourse__description {
